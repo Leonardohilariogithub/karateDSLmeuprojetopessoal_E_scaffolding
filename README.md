@@ -1,0 +1,1 @@
+# karateDSLmeuprojetopessoal_E_scaffolding

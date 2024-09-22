@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">2</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2024-09-22 05:48:11 PM</div>
+    <div>2024-09-22 05:46:34 PM</div>
   </div>
 </div>
 
@@ -57,7 +57,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div class="nav-item passed">
             <a href="#[2:25]"><span>[2:25]</span> <span>cadastrar usuarios com sucesso</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[3:43]"><span>[3:43]</span> <span>cadastrar usuarios com sucesso com body em arquivo json</span></a>
           </div>
         </div>
@@ -84,7 +84,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1204</span>
+              <span>ms:</span>&nbsp;<span>1145</span>
             </div>
           </div>
           <div class="step-row">
@@ -107,7 +107,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url &quot;https://serverest.dev&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -116,7 +116,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">17:48:08.880 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">17:46:31.850 karate.env system property was: null 
 </div>   
 
   
@@ -136,7 +136,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def body =</span>
       </div>
     </div>
-    <div class="time-cell passed">89</div>
+    <div class="time-cell passed">88</div>
   </div>
 
    
@@ -225,7 +225,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">1095</div>
+    <div class="time-cell passed">1016</div>
   </div>
 
    
@@ -234,7 +234,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.38">17:48:09.392 request:
+  <div class="preformatted" data-parent="0.38">17:46:32.356 request:
 1 &gt; POST https://serverest.dev/usuarios
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 105
@@ -244,7 +244,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;nome&quot;:&quot;LEONARDO HILARIO&quot;,&quot;email&quot;:&quot;hilarioleozinho@gmail.com&quot;,&quot;password&quot;:&quot;teste&quot;,&quot;administrador&quot;:&quot;true&quot;}
 
-17:48:10.112 response time in milliseconds: 713
+17:46:33.017 response time in milliseconds: 661
 1 &lt; 400
 1 &lt; access-control-allow-origin: *
 1 &lt; x-dns-prefetch-control: off
@@ -254,8 +254,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; x-content-type-options: nosniff
 1 &lt; x-xss-protection: 1; mode=block
 1 &lt; content-type: application/json; charset=utf-8
-1 &lt; X-Cloud-Trace-Context: a048090bb385bfc620b4f8c20db025fd
-1 &lt; Date: Sun, 22 Sep 2024 20:48:10 GMT
+1 &lt; X-Cloud-Trace-Context: aff5cecee27954c0b980e0be911aa3cd
+1 &lt; Date: Sun, 22 Sep 2024 20:46:33 GMT
 1 &lt; Server: Google Frontend
 1 &lt; Content-Length: 53
 {
@@ -309,7 +309,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.message == &quot;Este email já está sendo usado&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">11</div>
+    <div class="time-cell passed">33</div>
   </div>
 
    
@@ -337,8 +337,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1234</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>57</span>
             </div>
           </div>
           <div class="step-row">
@@ -361,7 +361,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url &quot;https://serverest.dev&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -370,7 +370,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">17:48:08.878 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">17:46:31.851 karate.env system property was: null 
 </div>   
 
   
@@ -397,7 +397,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def now = function(){ return java.lang.System.currentTimeMillis() }</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -435,13 +435,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.51">
-      <div class="step-ref passed">51</div>
+      <div class="step-ref failed">51</div>
       
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def body = read(&quot;classpath:/examples/WebinarBase2/POST/json/usuario.json&quot;)</span>
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def body = read(&quot;classpath:/examples/WebinarBase2/POST/json/usuario.json/usuario.json&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">91</div>
+    <div class="time-cell failed">52</div>
   </div>
 
    
@@ -450,7 +450,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.51">17:46:31.972 classpath:examples/WebinarBase2/POST/post_usuarios.feature:51
+* def body = read(&quot;classpath:/examples/WebinarBase2/POST/json/usuario.json/usuario.json&quot;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: read(&quot;classpath:/examples/WebinarBase2/POST/json/usuario.json/usuario.json&quot;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: not found: /examples/WebinarBase2/POST/json/usuario.json/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- &lt;js&gt;.:program(Unnamed:1)
+
+classpath:examples/WebinarBase2/POST/post_usuarios.feature:51
+</div>   
 
   
 
@@ -463,13 +479,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.52">
-      <div class="step-ref passed">52</div>
+      <div class="step-ref skipped">52</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>set body.nome = &quot;Gessica&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -491,13 +507,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.54">
-      <div class="step-ref passed">54</div>
+      <div class="step-ref skipped">54</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>set body.email = &quot;hilarioleo+&quot; + now() + &quot;+@gmail.com&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">29</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -519,13 +535,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.55">
-      <div class="step-ref passed">55</div>
+      <div class="step-ref skipped">55</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print body.email</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -534,8 +550,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.55">17:48:09.053 [print] hilarioleo+1727038089038+@gmail.com 
-</div>   
+     
 
   
 
@@ -548,13 +563,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.57">
-      <div class="step-ref passed">57</div>
+      <div class="step-ref skipped">57</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>set body.password = &quot;123456&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -576,13 +591,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.58">
-      <div class="step-ref passed">58</div>
+      <div class="step-ref skipped">58</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>set body.administrador = &quot;true&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -604,13 +619,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.60">
-      <div class="step-ref passed">60</div>
+      <div class="step-ref skipped">60</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &quot;/usuarios&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -632,13 +647,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.61">
-      <div class="step-ref passed">61</div>
+      <div class="step-ref skipped">61</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>request body</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -660,13 +675,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.62">
-      <div class="step-ref passed">62</div>
+      <div class="step-ref skipped">62</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">1097</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -675,36 +690,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.62">17:48:09.393 request:
-1 &gt; POST https://serverest.dev/usuarios
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 107
-1 &gt; Host: serverest.dev
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;nome&quot;:&quot;Gessica&quot;,&quot;email&quot;:&quot;hilarioleo+1727038089038+@gmail.com&quot;,&quot;password&quot;:&quot;123456&quot;,&quot;administrador&quot;:&quot;true&quot;}
-
-17:48:10.153 response time in milliseconds: 760
-1 &lt; 201
-1 &lt; access-control-allow-origin: *
-1 &lt; x-dns-prefetch-control: off
-1 &lt; x-frame-options: SAMEORIGIN
-1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
-1 &lt; x-download-options: noopen
-1 &lt; x-content-type-options: nosniff
-1 &lt; x-xss-protection: 1; mode=block
-1 &lt; content-type: application/json; charset=utf-8
-1 &lt; X-Cloud-Trace-Context: 81ac99ace0137ba0587ebbfa1d49a13b
-1 &lt; Date: Sun, 22 Sep 2024 20:48:10 GMT
-1 &lt; Server: Google Frontend
-1 &lt; Content-Length: 82
-{
-    &quot;message&quot;: &quot;Cadastro realizado com sucesso&quot;,
-    &quot;_id&quot;: &quot;emdmhu4UWMpDOLi5&quot;
-}
-
-</div>   
+     
 
   
 
@@ -717,13 +703,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.63">
-      <div class="step-ref passed">63</div>
+      <div class="step-ref skipped">63</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -745,13 +731,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.64">
-      <div class="step-ref passed">64</div>
+      <div class="step-ref skipped">64</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.message == &quot;Cadastro realizado com sucesso&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    

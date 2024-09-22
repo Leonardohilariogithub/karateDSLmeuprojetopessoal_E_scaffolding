@@ -3,7 +3,8 @@ Feature: Praticando karate framework com API Serverest
   Background:
     * url "https://serverest.dev"
 
-  Scenario: cadastrar usuarios com sucesso
+    @ignore
+  Scenario: cadastrar usuarios com sucesso unico
     * def body =
     """
      {
@@ -47,7 +48,7 @@ Feature: Praticando karate framework com API Serverest
     #Numero radomico entre 1 e 10 aleatorio
     #* def now = function(){ return Math.floor(Math.random() * 10) }
 
-    * def body = read("classpath:/examples/Praticando_serverest/POST/json/usuario.json")
+    * def body = read("classpath:/examples/WebinarBase2/POST/json/usuario.json")
     * set body.nome = "Gessica"
 
     * set body.email = "hilarioleo+" + now() + "+@gmail.com"

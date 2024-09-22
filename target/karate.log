@@ -6794,3 +6794,5381 @@ classpath:examples/WebinarBase2/POST/post_usuarios.feature:50
     ]
 }
 
+17:43:57.115 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:43:57.128 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1727037837121
+17:43:57.141 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+17:43:58.647 [pool-1-thread-7] INFO  com.intuit.karate - karate.env system property was: null 
+17:43:58.649 [pool-1-thread-8] INFO  com.intuit.karate - karate.env system property was: null 
+17:43:58.648 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:43:58.650 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:43:58.648 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+17:43:58.648 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:43:58.651 [pool-1-thread-6] INFO  com.intuit.karate - karate.env system property was: null 
+17:43:58.652 [pool-1-thread-10] INFO  com.intuit.karate - karate.env system property was: null 
+17:43:58.653 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:43:58.653 [pool-1-thread-9] INFO  com.intuit.karate - karate.env system property was: null 
+17:43:58.759 [pool-1-thread-10] ERROR com.intuit.karate - classpath:examples/WebinarBase2/POST/post_usuarios.feature:50
+* def body = read("classpath:/examples/Praticando_serverest/POST/json/usuario.json")
+js failed:
+>>>>
+01: read("classpath:/examples/Praticando_serverest/POST/json/usuario.json")
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /examples/Praticando_serverest/POST/json/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- <js>.:program(Unnamed:1)
+
+classpath:examples/WebinarBase2/POST/post_usuarios.feature:50
+17:43:59.110 [pool-1-thread-7] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:43:59.110 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:43:59.112 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:43:59.112 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?nome=Fulano+da+Silva
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:43:59.112 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?nome=Fulano+da+Silva&email=fulano%40qa.com
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:43:59.113 [pool-1-thread-6] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?nome=Fulano+da+Silva&email=fulano%40qa.com
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:43:59.113 [pool-1-thread-8] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 105
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"LEONARDO HILARIO","email":"hilarioleozinho@gmail.com","password":"teste","administrador":"true"}
+
+17:43:59.114 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+17:43:59.119 [pool-1-thread-9] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 105
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"LEONARDO HILARIO","email":"hilarioleozinho@gmail.com","password":"teste","administrador":"true"}
+
+17:43:59.571 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 453
+1 < 200
+1 < Date: Sun, 22 Sep 2024 20:43:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722456807&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=zPzfq5F6Ap%2Bb%2BR18Bs8ry6EPfgg%2FndwzOlYujE49i6g%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1722456807&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=zPzfq5F6Ap%2Bb%2BR18Bs8ry6EPfgg%2FndwzOlYujE49i6g%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 997
+1 < X-Ratelimit-Reset: 1722456829
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 15424
+1 < Server: cloudflare
+1 < CF-RAY: 8c7521638d4c64cf-GIG
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+17:43:59.592 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+17:43:59.666 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 551
+1 < 201
+1 < Date: Sun, 22 Sep 2024 20:44:00 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727037839&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=k5WMH2JMoYxmrj4%2FBSXFcrN6ZJjKVCGsQwpuzQXeJAE%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727037839&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=k5WMH2JMoYxmrj4%2FBSXFcrN6ZJjKVCGsQwpuzQXeJAE%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1727037861
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 8c7521638c337a51-GIG
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+17:43:59.670 [pool-1-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
+17:43:59.738 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 143
+2 < 200
+2 < Date: Sun, 22 Sep 2024 20:44:00 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1726828357&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=CJ2mTytgEwZpVbg%2B4tQeWJVdowCNQybG7cWG5ZNr0RE%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1726828357&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=CJ2mTytgEwZpVbg%2B4tQeWJVdowCNQybG7cWG5ZNr0RE%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1726828374
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 15699
+2 < Server: cloudflare
+2 < CF-RAY: 8c752164bd816443-GIG
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+17:43:59.777 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 663
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: a97202edb0029fc0d916c599f228c045;o=1
+1 < Date: Sun, 22 Sep 2024 20:44:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 253
+{
+    "quantidade": 1,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        }
+    ]
+}
+
+17:43:59.784 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 670
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 4b126b02326ff7ffeea683e6213310ee
+1 < Date: Sun, 22 Sep 2024 20:44:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 464
+{
+    "quantidade": 2,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VAvs6FYlCy7znLhZ"
+        }
+    ]
+}
+
+17:43:59.795 [pool-1-thread-9] DEBUG com.intuit.karate - response time in milliseconds: 674
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 932e353b434e43be8577f36d745c84e2
+1 < Date: Sun, 22 Sep 2024 20:44:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 53
+{
+    "message": "Este email já está sendo usado"
+}
+
+17:43:59.798 [pool-1-thread-8] DEBUG com.intuit.karate - response time in milliseconds: 681
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 1ec52d1a4adb7f4461dc52d28237f0ba
+1 < Date: Sun, 22 Sep 2024 20:44:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 53
+{
+    "message": "Este email já está sendo usado"
+}
+
+17:43:59.798 [pool-1-thread-6] DEBUG com.intuit.karate - response time in milliseconds: 679
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 64747258f8f190aba4c985814cceccd1
+1 < Date: Sun, 22 Sep 2024 20:44:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 253
+{
+    "quantidade": 1,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        }
+    ]
+}
+
+17:43:59.818 [pool-1-thread-8] ERROR com.intuit.karate - classpath:examples/WebinarBase2/POST/post_usuarios.feature:20
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 681, url: https://serverest.dev/usuarios, response: 
+{
+    "message": "Este email já está sendo usado"
+}
+classpath:examples/WebinarBase2/POST/post_usuarios.feature:20
+17:43:59.849 [pool-1-thread-7] DEBUG com.intuit.karate - response time in milliseconds: 738
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: f2b070d8fd67cbd190e1d80cdca9d409
+1 < Date: Sun, 22 Sep 2024 20:44:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 19689
+{
+    "quantidade": 84,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033479306+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "1DvVyIlgFMrJ2osv"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033360005+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2DHxLpTcsFu5aIOw"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+57ad609f-2e53-46cb-9482-ff2defebbe1b+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2jUfq9CbUQfGF9Ur"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727034860439+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2nMyXYOAcigls8pS"
+        },
+        {
+            "nome": "Lisa Walsh",
+            "email": "39f9c4c0-3949-4a16-a85a-f511bd6fa961@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "4X6K8aV4zaOMtKmN"
+        },
+        {
+            "nome": "Feiteiro Teste APi",
+            "email": "feiteiro@qa.com.br",
+            "password": "feteiro1",
+            "administrador": "true",
+            "_id": "62bECKvmWXEcW3EO"
+        },
+        {
+            "nome": "Kathryn Friesen",
+            "email": "b45ed8d9-2b3b-4360-8c6e-17874d157e62@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "6WOZYDuv2qs3UPzj"
+        },
+        {
+            "nome": "Javier Koepp",
+            "email": "6dc7331a-8715-49df-b818-772745a652a8@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "7GzX2bCLuNdPjGbr"
+        },
+        {
+            "nome": "Cedric Rath",
+            "email": "33691734-4a32-4d63-8a46-78e7feda8970@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "8Gf2zUaNhaMu7S6D"
+        },
+        {
+            "nome": "Jermaine O'Conner",
+            "email": "40cbcdc6-6a5d-47aa-96de-02287ea975fe@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "8WZjvxBmFtVJPDUC"
+        },
+        {
+            "nome": "LEONARDO HILARIO",
+            "email": "hilarioleozinho@gmail.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "8sgnPpYUpKBkbnv6"
+        },
+        {
+            "nome": "Ginger Grady",
+            "email": "7b5bf471-c719-4cd0-9495-47c1048c8ff5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "9rfrBdaMF8RXsXDJ"
+        },
+        {
+            "nome": "Dewey Kihn",
+            "email": "953ebc10-7f70-4f12-a4ab-aa5bb768a9a3@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "A9B8DRmijoM3BStJ"
+        },
+        {
+            "nome": "Mr. Dexter Skiles",
+            "email": "33da88cb-f996-455b-bb6d-140f01008183@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "AYasZn4tpaKTHOvH"
+        },
+        {
+            "nome": "Ismael Murazik",
+            "email": "17b5c5b5-36ee-4523-9fba-df4f63bb9042@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "AaOGVk5kQ55IkFAs"
+        },
+        {
+            "nome": "Leslie Swift",
+            "email": "a933500a-7d1e-4a3f-8917-91e5cc5f2f88@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "BQbQPXVAILsYuABX"
+        },
+        {
+            "nome": "Fannie Kovacek",
+            "email": "a38a0ce9-d760-4082-8dc3-3a879e3275c5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "BfNtjWqp9dkNKXmj"
+        },
+        {
+            "nome": "Lucas",
+            "email": "Lucas@email.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "CDwWPHSSWODm4COy"
+        },
+        {
+            "nome": "Clinton Yost",
+            "email": "9f52766d-8aa9-431f-8457-a98081f3db9e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "DU7NndU8yh9bFpOE"
+        },
+        {
+            "nome": "Myrtle Bayer",
+            "email": "e2e560ca-9589-4954-87ca-7e03e83199b1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "GimyqjPFKtujkZ9L"
+        },
+        {
+            "nome": "Miss Eula Crona",
+            "email": "14ce01a9-49f5-473c-b3f1-b3b7c313bcf1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "HHO7J4WZQwQ5g3qS"
+        },
+        {
+            "nome": "Jo Konopelski",
+            "email": "71315e65-3bd8-454b-8ab4-867eb2e95ef4@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "HvUYIyYxjAsqPq1E"
+        },
+        {
+            "nome": "Kristen Walker I",
+            "email": "6f872165-1c26-4149-a4b2-8810739c1549@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "IOn5hp5Yo6qtBdNf"
+        },
+        {
+            "nome": "Rosemary Bogan",
+            "email": "94f9b1fa-1d46-433a-a1d8-6c11ab8c42d4@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "IsnjYJc6bIcXL4r2"
+        },
+        {
+            "nome": "Rosemary Bergnaum",
+            "email": "8d8082b0-b4f6-4302-9d00-ff1e956b08f9@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "JXfkL3rGFVN7Vn6Q"
+        },
+        {
+            "nome": "Noel Gutmann",
+            "email": "6e171522-20a0-453c-9a43-58c149475d7e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "JdjQ4ToFXcHrOMZc"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033903503+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "JdlJjiL8vMju5k4v"
+        },
+        {
+            "nome": "Elsie Becker",
+            "email": "4be92953-cb3f-4e92-a0f4-bab735fde368@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "KStzbOBoP2WPaYRn"
+        },
+        {
+            "nome": "Rosemary Satterfield",
+            "email": "af73a604-b35e-4785-89b7-021253f4a773@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Kixnis2fKgwr9qdC"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+74b48117-87c7-4b3f-9238-0b3c2af7794a+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "OJkP1PkA2lzoy22b"
+        },
+        {
+            "nome": "Andy Reilly",
+            "email": "e28a853f-c06b-4d35-8a80-6e671b2b384a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OP91FtDlCUeaZGRB"
+        },
+        {
+            "nome": "Ms. Maryann Ziemann II",
+            "email": "b67d30fd-7dd6-44a8-8f36-cbd77e31f5cf@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OwG5CSHRR74AKbzJ"
+        },
+        {
+            "nome": "Melody Rutherford-Jacobi Sr.",
+            "email": "592b095e-a6e8-4494-99f0-eb5853c46dfd@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OyOGafxJvORAcE5t"
+        },
+        {
+            "nome": "Dr. Erin Fritsch",
+            "email": "83c49df5-73e7-4d22-bfbb-bf6c5bfd16ec@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "PAh1PPTnSLtC98Aw"
+        },
+        {
+            "nome": "Mary Brakus",
+            "email": "4ce74aae-e68f-4bfb-8ca6-872519b38edc@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Pij6uyyPgwIYpFpe"
+        },
+        {
+            "nome": "Lucia Pollich",
+            "email": "6e905bf0-356f-41e1-bfad-90db77f2b3a5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Q1O3C7BWkM7Vmnoz"
+        },
+        {
+            "nome": "Grace Reynolds",
+            "email": "b1605ba7-483e-4577-96df-bac1911f167a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Rs4yWApiyv9SLAC6"
+        },
+        {
+            "nome": "Eduardo Brekke",
+            "email": "f633043b-4ae0-407c-8a4b-75d2aaab3216@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "TRgXN6BuiowBeHYQ"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033443887+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "TfJnfEoaSEJuInzR"
+        },
+        {
+            "nome": "Alvin Langosh",
+            "email": "e04eac29-b526-4624-9995-edcd6fe6e511@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Th5vKVjhLw85w5g2"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033818345+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "UT0ZhIbX4KD2bfbg"
+        },
+        {
+            "nome": "Dr. Anne Feest-Batz",
+            "email": "9447a124-5868-492f-b74a-32c88ecb2d9c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "UXzg2xSvogeC9VZ7"
+        },
+        {
+            "nome": "Karla Donnelly I",
+            "email": "0ea592dd-3327-4c0a-bfab-dcf064824cf5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "UnnECT1AOIt8Z1rV"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VAvs6FYlCy7znLhZ"
+        },
+        {
+            "nome": "miguel valentino",
+            "email": "miguelin@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VzTbXRY26vNqE5hW"
+        },
+        {
+            "nome": "Dr. Leroy Monahan",
+            "email": "b3bb9896-0117-4332-b598-6c80cbe7292c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "WUNpIWhUhqvr3tC6"
+        },
+        {
+            "nome": "Heather Murphy IV",
+            "email": "cc5f3d39-5a4a-4264-88f0-8f4defb0506d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Wkau559NUOGVSLhz"
+        },
+        {
+            "nome": "Cornelius Wehner",
+            "email": "142e4fd1-41b5-422a-83a1-15f7a269d535@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "XkCKvu1LCrsNhxGV"
+        },
+        {
+            "nome": "Essie Hahn-Pfannerstill IV",
+            "email": "0a7435c3-e2be-454c-b5ee-4f3ef7a10bbf@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "YGHYWqxBDDWGp1h9"
+        },
+        {
+            "nome": "Guillermo Dickinson",
+            "email": "4eddd5ad-ec24-4633-a0ab-bb315470084b@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "YKpmZRfcPi3rQxXJ"
+        },
+        {
+            "nome": "Bonnie Gutmann",
+            "email": "71c880f4-51f4-4134-b055-5aba4549138d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "an7WSonRrEPVXfCI"
+        },
+        {
+            "nome": "miguel valentino",
+            "email": "miguelino@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "bSLXMIg3cFaPpCc1"
+        },
+        {
+            "nome": "Frank Gutkowski",
+            "email": "20fc20ca-7270-421b-9194-1b2bdda39d45@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "bnru2BSyWB3kbitg"
+        },
+        {
+            "nome": "Annie Glover",
+            "email": "b44f710d-ce36-4519-b01a-e1ce18e0a63a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "buzMRpQDOGyRFQS5"
+        },
+        {
+            "nome": "Tammy Wuckert",
+            "email": "2545ee27-1382-49ad-a4e0-a5b4e0c1dea8@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "cof6il36ZDxm9HZ5"
+        },
+        {
+            "nome": "Jan Kessler",
+            "email": "8c261ca5-f29d-4d28-a0cf-96278b48f46a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "gDN56GhuNiTNzH6J"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+NaN+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "gUVapkKAWriPyp6P"
+        },
+        {
+            "nome": "Hector Hamill",
+            "email": "c6b8392f-778c-4c4a-90a7-c385ed2807f9@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "j9W2LeEgFjcjVipv"
+        },
+        {
+            "nome": "Nancy Quitzon",
+            "email": "7806feb9-7a17-4c60-8656-0deaa2d288da@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "jYPvZXbkx5xKM2GY"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+3+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "lMmar66OC7Q1vT9v"
+        },
+        {
+            "nome": "Bridget Beer",
+            "email": "a27ce49d-8447-421c-b86f-63e737b691ab@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ldF45c4vcKJNKVND"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033856712+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "lp9QolcxjoOh52D3"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+NaN+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "mJ6e72ottL09b5lE"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033944636+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "mfA2W7i6HiRWJnVE"
+        },
+        {
+            "nome": "Alfredo Dooley",
+            "email": "49f9b715-1cb3-490d-b841-38ec3ebdd47c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "mxHbg7yxRgWVWLbT"
+        },
+        {
+            "nome": "Mr. Marco Fisher",
+            "email": "aa384ec8-9a8c-41a4-9521-a1f826a8225d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "mymwNh80V8WA94Xf"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727036024957+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "nZvjTs0PsK0G5bGS"
+        },
+        {
+            "nome": "Bill Goyette",
+            "email": "aeabe63e-aa39-4e54-918d-3f22a5b9fe20@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "nlKgqN4uZz270DwN"
+        },
+        {
+            "nome": "Ricky Moore",
+            "email": "5c94f71e-7796-41ec-b02c-f0d0defb719b@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "oWO6HKfrCphmp9xI"
+        },
+        {
+            "nome": "Isabel Baumbach",
+            "email": "b2dd14fc-a35b-4f02-964e-fd06f0bad461@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ohT2edlTiObZReKm"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033922801+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "pkRppuGrEjeVw8sj"
+        },
+        {
+            "nome": "Beatrice Emard DDS",
+            "email": "f45deccd-0eb0-4814-8ff6-89ca4c6611a1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "qr3UEaHr4oIK3KOg"
+        },
+        {
+            "nome": "Hilda Erdman",
+            "email": "5f68fea3-48a1-4d4b-9d38-f91cd7c5f05e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "rHMg9zSBVpu9QfsF"
+        },
+        {
+            "nome": "Jeffrey Armstrong-Schaden",
+            "email": "af4cea54-1946-466f-8d69-1d1ded6e2ea7@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "s2g20SxHKtARC1WY"
+        },
+        {
+            "nome": "Johnny Stroman",
+            "email": "4af6a910-f772-497a-82b5-d10a4554b608@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "tJRXvfuMImLiO0IK"
+        },
+        {
+            "nome": "Mr. Rick Hudson",
+            "email": "2ad7be54-75b8-4ed4-a793-61a234fc1461@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "tZxdJm5RX8QljMJD"
+        },
+        {
+            "nome": "Wesley Walsh",
+            "email": "307136ed-86ba-42c5-8c69-b7e5e6f9c25f@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "uKuGf8WhkUS1AtDQ"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+7+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "ua62U2uuilC4VI7Q"
+        },
+        {
+            "nome": "Flora Olson",
+            "email": "8ce40e50-f8ef-498e-abe2-8cc62f875f06@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "wBR2ThmP1apU3O7X"
+        },
+        {
+            "nome": "Jean Blick",
+            "email": "85eb2f00-0115-44a4-8b05-c5a99657c96d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "xUL6isVHReAcs5H8"
+        },
+        {
+            "nome": "Laurie Heaney",
+            "email": "cb79d646-d6aa-4aa9-b009-79839e2ae352@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ySysAF1rs4hm4LQL"
+        },
+        {
+            "nome": "Annie Schneider",
+            "email": "71a43249-5cee-476c-9212-f6d49d9a0e40@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "zMhem6pSVBcSQT8j"
+        },
+        {
+            "nome": "Margarita Cormier Jr.",
+            "email": "246857c6-658e-4f67-a27b-05e3ebaaa5a3@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "zRymoviHPyzBzoJE"
+        }
+    ]
+}
+
+17:43:59.900 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 787
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: a4b704e8c8e478e0f976cdaac4e4b48d
+1 < Date: Sun, 22 Sep 2024 20:44:00 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 19689
+{
+    "quantidade": 84,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033479306+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "1DvVyIlgFMrJ2osv"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033360005+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2DHxLpTcsFu5aIOw"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+57ad609f-2e53-46cb-9482-ff2defebbe1b+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2jUfq9CbUQfGF9Ur"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727034860439+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2nMyXYOAcigls8pS"
+        },
+        {
+            "nome": "Lisa Walsh",
+            "email": "39f9c4c0-3949-4a16-a85a-f511bd6fa961@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "4X6K8aV4zaOMtKmN"
+        },
+        {
+            "nome": "Feiteiro Teste APi",
+            "email": "feiteiro@qa.com.br",
+            "password": "feteiro1",
+            "administrador": "true",
+            "_id": "62bECKvmWXEcW3EO"
+        },
+        {
+            "nome": "Kathryn Friesen",
+            "email": "b45ed8d9-2b3b-4360-8c6e-17874d157e62@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "6WOZYDuv2qs3UPzj"
+        },
+        {
+            "nome": "Javier Koepp",
+            "email": "6dc7331a-8715-49df-b818-772745a652a8@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "7GzX2bCLuNdPjGbr"
+        },
+        {
+            "nome": "Cedric Rath",
+            "email": "33691734-4a32-4d63-8a46-78e7feda8970@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "8Gf2zUaNhaMu7S6D"
+        },
+        {
+            "nome": "Jermaine O'Conner",
+            "email": "40cbcdc6-6a5d-47aa-96de-02287ea975fe@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "8WZjvxBmFtVJPDUC"
+        },
+        {
+            "nome": "LEONARDO HILARIO",
+            "email": "hilarioleozinho@gmail.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "8sgnPpYUpKBkbnv6"
+        },
+        {
+            "nome": "Ginger Grady",
+            "email": "7b5bf471-c719-4cd0-9495-47c1048c8ff5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "9rfrBdaMF8RXsXDJ"
+        },
+        {
+            "nome": "Dewey Kihn",
+            "email": "953ebc10-7f70-4f12-a4ab-aa5bb768a9a3@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "A9B8DRmijoM3BStJ"
+        },
+        {
+            "nome": "Mr. Dexter Skiles",
+            "email": "33da88cb-f996-455b-bb6d-140f01008183@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "AYasZn4tpaKTHOvH"
+        },
+        {
+            "nome": "Ismael Murazik",
+            "email": "17b5c5b5-36ee-4523-9fba-df4f63bb9042@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "AaOGVk5kQ55IkFAs"
+        },
+        {
+            "nome": "Leslie Swift",
+            "email": "a933500a-7d1e-4a3f-8917-91e5cc5f2f88@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "BQbQPXVAILsYuABX"
+        },
+        {
+            "nome": "Fannie Kovacek",
+            "email": "a38a0ce9-d760-4082-8dc3-3a879e3275c5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "BfNtjWqp9dkNKXmj"
+        },
+        {
+            "nome": "Lucas",
+            "email": "Lucas@email.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "CDwWPHSSWODm4COy"
+        },
+        {
+            "nome": "Clinton Yost",
+            "email": "9f52766d-8aa9-431f-8457-a98081f3db9e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "DU7NndU8yh9bFpOE"
+        },
+        {
+            "nome": "Myrtle Bayer",
+            "email": "e2e560ca-9589-4954-87ca-7e03e83199b1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "GimyqjPFKtujkZ9L"
+        },
+        {
+            "nome": "Miss Eula Crona",
+            "email": "14ce01a9-49f5-473c-b3f1-b3b7c313bcf1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "HHO7J4WZQwQ5g3qS"
+        },
+        {
+            "nome": "Jo Konopelski",
+            "email": "71315e65-3bd8-454b-8ab4-867eb2e95ef4@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "HvUYIyYxjAsqPq1E"
+        },
+        {
+            "nome": "Kristen Walker I",
+            "email": "6f872165-1c26-4149-a4b2-8810739c1549@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "IOn5hp5Yo6qtBdNf"
+        },
+        {
+            "nome": "Rosemary Bogan",
+            "email": "94f9b1fa-1d46-433a-a1d8-6c11ab8c42d4@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "IsnjYJc6bIcXL4r2"
+        },
+        {
+            "nome": "Rosemary Bergnaum",
+            "email": "8d8082b0-b4f6-4302-9d00-ff1e956b08f9@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "JXfkL3rGFVN7Vn6Q"
+        },
+        {
+            "nome": "Noel Gutmann",
+            "email": "6e171522-20a0-453c-9a43-58c149475d7e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "JdjQ4ToFXcHrOMZc"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033903503+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "JdlJjiL8vMju5k4v"
+        },
+        {
+            "nome": "Elsie Becker",
+            "email": "4be92953-cb3f-4e92-a0f4-bab735fde368@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "KStzbOBoP2WPaYRn"
+        },
+        {
+            "nome": "Rosemary Satterfield",
+            "email": "af73a604-b35e-4785-89b7-021253f4a773@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Kixnis2fKgwr9qdC"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+74b48117-87c7-4b3f-9238-0b3c2af7794a+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "OJkP1PkA2lzoy22b"
+        },
+        {
+            "nome": "Andy Reilly",
+            "email": "e28a853f-c06b-4d35-8a80-6e671b2b384a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OP91FtDlCUeaZGRB"
+        },
+        {
+            "nome": "Ms. Maryann Ziemann II",
+            "email": "b67d30fd-7dd6-44a8-8f36-cbd77e31f5cf@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OwG5CSHRR74AKbzJ"
+        },
+        {
+            "nome": "Melody Rutherford-Jacobi Sr.",
+            "email": "592b095e-a6e8-4494-99f0-eb5853c46dfd@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OyOGafxJvORAcE5t"
+        },
+        {
+            "nome": "Dr. Erin Fritsch",
+            "email": "83c49df5-73e7-4d22-bfbb-bf6c5bfd16ec@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "PAh1PPTnSLtC98Aw"
+        },
+        {
+            "nome": "Mary Brakus",
+            "email": "4ce74aae-e68f-4bfb-8ca6-872519b38edc@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Pij6uyyPgwIYpFpe"
+        },
+        {
+            "nome": "Lucia Pollich",
+            "email": "6e905bf0-356f-41e1-bfad-90db77f2b3a5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Q1O3C7BWkM7Vmnoz"
+        },
+        {
+            "nome": "Grace Reynolds",
+            "email": "b1605ba7-483e-4577-96df-bac1911f167a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Rs4yWApiyv9SLAC6"
+        },
+        {
+            "nome": "Eduardo Brekke",
+            "email": "f633043b-4ae0-407c-8a4b-75d2aaab3216@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "TRgXN6BuiowBeHYQ"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033443887+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "TfJnfEoaSEJuInzR"
+        },
+        {
+            "nome": "Alvin Langosh",
+            "email": "e04eac29-b526-4624-9995-edcd6fe6e511@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Th5vKVjhLw85w5g2"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033818345+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "UT0ZhIbX4KD2bfbg"
+        },
+        {
+            "nome": "Dr. Anne Feest-Batz",
+            "email": "9447a124-5868-492f-b74a-32c88ecb2d9c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "UXzg2xSvogeC9VZ7"
+        },
+        {
+            "nome": "Karla Donnelly I",
+            "email": "0ea592dd-3327-4c0a-bfab-dcf064824cf5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "UnnECT1AOIt8Z1rV"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VAvs6FYlCy7znLhZ"
+        },
+        {
+            "nome": "miguel valentino",
+            "email": "miguelin@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VzTbXRY26vNqE5hW"
+        },
+        {
+            "nome": "Dr. Leroy Monahan",
+            "email": "b3bb9896-0117-4332-b598-6c80cbe7292c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "WUNpIWhUhqvr3tC6"
+        },
+        {
+            "nome": "Heather Murphy IV",
+            "email": "cc5f3d39-5a4a-4264-88f0-8f4defb0506d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Wkau559NUOGVSLhz"
+        },
+        {
+            "nome": "Cornelius Wehner",
+            "email": "142e4fd1-41b5-422a-83a1-15f7a269d535@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "XkCKvu1LCrsNhxGV"
+        },
+        {
+            "nome": "Essie Hahn-Pfannerstill IV",
+            "email": "0a7435c3-e2be-454c-b5ee-4f3ef7a10bbf@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "YGHYWqxBDDWGp1h9"
+        },
+        {
+            "nome": "Guillermo Dickinson",
+            "email": "4eddd5ad-ec24-4633-a0ab-bb315470084b@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "YKpmZRfcPi3rQxXJ"
+        },
+        {
+            "nome": "Bonnie Gutmann",
+            "email": "71c880f4-51f4-4134-b055-5aba4549138d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "an7WSonRrEPVXfCI"
+        },
+        {
+            "nome": "miguel valentino",
+            "email": "miguelino@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "bSLXMIg3cFaPpCc1"
+        },
+        {
+            "nome": "Frank Gutkowski",
+            "email": "20fc20ca-7270-421b-9194-1b2bdda39d45@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "bnru2BSyWB3kbitg"
+        },
+        {
+            "nome": "Annie Glover",
+            "email": "b44f710d-ce36-4519-b01a-e1ce18e0a63a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "buzMRpQDOGyRFQS5"
+        },
+        {
+            "nome": "Tammy Wuckert",
+            "email": "2545ee27-1382-49ad-a4e0-a5b4e0c1dea8@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "cof6il36ZDxm9HZ5"
+        },
+        {
+            "nome": "Jan Kessler",
+            "email": "8c261ca5-f29d-4d28-a0cf-96278b48f46a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "gDN56GhuNiTNzH6J"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+NaN+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "gUVapkKAWriPyp6P"
+        },
+        {
+            "nome": "Hector Hamill",
+            "email": "c6b8392f-778c-4c4a-90a7-c385ed2807f9@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "j9W2LeEgFjcjVipv"
+        },
+        {
+            "nome": "Nancy Quitzon",
+            "email": "7806feb9-7a17-4c60-8656-0deaa2d288da@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "jYPvZXbkx5xKM2GY"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+3+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "lMmar66OC7Q1vT9v"
+        },
+        {
+            "nome": "Bridget Beer",
+            "email": "a27ce49d-8447-421c-b86f-63e737b691ab@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ldF45c4vcKJNKVND"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033856712+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "lp9QolcxjoOh52D3"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+NaN+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "mJ6e72ottL09b5lE"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033944636+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "mfA2W7i6HiRWJnVE"
+        },
+        {
+            "nome": "Alfredo Dooley",
+            "email": "49f9b715-1cb3-490d-b841-38ec3ebdd47c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "mxHbg7yxRgWVWLbT"
+        },
+        {
+            "nome": "Mr. Marco Fisher",
+            "email": "aa384ec8-9a8c-41a4-9521-a1f826a8225d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "mymwNh80V8WA94Xf"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727036024957+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "nZvjTs0PsK0G5bGS"
+        },
+        {
+            "nome": "Bill Goyette",
+            "email": "aeabe63e-aa39-4e54-918d-3f22a5b9fe20@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "nlKgqN4uZz270DwN"
+        },
+        {
+            "nome": "Ricky Moore",
+            "email": "5c94f71e-7796-41ec-b02c-f0d0defb719b@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "oWO6HKfrCphmp9xI"
+        },
+        {
+            "nome": "Isabel Baumbach",
+            "email": "b2dd14fc-a35b-4f02-964e-fd06f0bad461@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ohT2edlTiObZReKm"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033922801+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "pkRppuGrEjeVw8sj"
+        },
+        {
+            "nome": "Beatrice Emard DDS",
+            "email": "f45deccd-0eb0-4814-8ff6-89ca4c6611a1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "qr3UEaHr4oIK3KOg"
+        },
+        {
+            "nome": "Hilda Erdman",
+            "email": "5f68fea3-48a1-4d4b-9d38-f91cd7c5f05e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "rHMg9zSBVpu9QfsF"
+        },
+        {
+            "nome": "Jeffrey Armstrong-Schaden",
+            "email": "af4cea54-1946-466f-8d69-1d1ded6e2ea7@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "s2g20SxHKtARC1WY"
+        },
+        {
+            "nome": "Johnny Stroman",
+            "email": "4af6a910-f772-497a-82b5-d10a4554b608@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "tJRXvfuMImLiO0IK"
+        },
+        {
+            "nome": "Mr. Rick Hudson",
+            "email": "2ad7be54-75b8-4ed4-a793-61a234fc1461@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "tZxdJm5RX8QljMJD"
+        },
+        {
+            "nome": "Wesley Walsh",
+            "email": "307136ed-86ba-42c5-8c69-b7e5e6f9c25f@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "uKuGf8WhkUS1AtDQ"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+7+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "ua62U2uuilC4VI7Q"
+        },
+        {
+            "nome": "Flora Olson",
+            "email": "8ce40e50-f8ef-498e-abe2-8cc62f875f06@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "wBR2ThmP1apU3O7X"
+        },
+        {
+            "nome": "Jean Blick",
+            "email": "85eb2f00-0115-44a4-8b05-c5a99657c96d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "xUL6isVHReAcs5H8"
+        },
+        {
+            "nome": "Laurie Heaney",
+            "email": "cb79d646-d6aa-4aa9-b009-79839e2ae352@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ySysAF1rs4hm4LQL"
+        },
+        {
+            "nome": "Annie Schneider",
+            "email": "71a43249-5cee-476c-9212-f6d49d9a0e40@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "zMhem6pSVBcSQT8j"
+        },
+        {
+            "nome": "Margarita Cormier Jr.",
+            "email": "246857c6-658e-4f67-a27b-05e3ebaaa5a3@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "zRymoviHPyzBzoJE"
+        }
+    ]
+}
+
+17:44:00.601 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:examples/usersKarateTemplate/users.feature
+17:44:00.855 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:examples/WebinarBase2/GET/usuarios.feature
+17:44:00.962 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 3 (0 remaining) classpath:examples/WebinarBase2/POST/post_usuarios.feature
+17:46:30.343 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:46:30.356 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1727037990356
+17:46:30.371 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+17:46:31.847 [pool-1-thread-6] INFO  com.intuit.karate - karate.env system property was: null 
+17:46:31.847 [pool-1-thread-7] INFO  com.intuit.karate - karate.env system property was: null 
+17:46:31.845 [pool-1-thread-8] INFO  com.intuit.karate - karate.env system property was: null 
+17:46:31.847 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:46:31.847 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:46:31.847 [pool-1-thread-9] INFO  com.intuit.karate - karate.env system property was: null 
+17:46:31.846 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:46:31.847 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+17:46:31.847 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:46:31.972 [pool-1-thread-9] ERROR com.intuit.karate - classpath:examples/WebinarBase2/POST/post_usuarios.feature:51
+* def body = read("classpath:/examples/WebinarBase2/POST/json/usuario.json/usuario.json")
+js failed:
+>>>>
+01: read("classpath:/examples/WebinarBase2/POST/json/usuario.json/usuario.json")
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: /examples/WebinarBase2/POST/json/usuario.json/usuario.json
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- <js>.:program(Unnamed:1)
+
+classpath:examples/WebinarBase2/POST/post_usuarios.feature:51
+17:46:32.346 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?nome=Fulano+da+Silva
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:46:32.347 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:46:32.349 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?nome=Fulano+da+Silva&email=fulano%40qa.com
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:46:32.349 [pool-1-thread-7] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:46:32.349 [pool-1-thread-6] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?nome=Fulano+da+Silva&email=fulano%40qa.com
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:46:32.349 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:46:32.351 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+17:46:32.356 [pool-1-thread-8] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 105
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"LEONARDO HILARIO","email":"hilarioleozinho@gmail.com","password":"teste","administrador":"true"}
+
+17:46:32.800 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 453
+1 < 200
+1 < Date: Sun, 22 Sep 2024 20:46:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722456807&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=zPzfq5F6Ap%2Bb%2BR18Bs8ry6EPfgg%2FndwzOlYujE49i6g%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1722456807&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=zPzfq5F6Ap%2Bb%2BR18Bs8ry6EPfgg%2FndwzOlYujE49i6g%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 997
+1 < X-Ratelimit-Reset: 1722456829
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 15578
+1 < Server: cloudflare
+1 < CF-RAY: 8c7525214d047a94-GIG
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+17:46:32.845 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+17:46:33.011 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 164
+2 < 200
+2 < Date: Sun, 22 Sep 2024 20:46:33 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1726828357&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=CJ2mTytgEwZpVbg%2B4tQeWJVdowCNQybG7cWG5ZNr0RE%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1726828357&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=CJ2mTytgEwZpVbg%2B4tQeWJVdowCNQybG7cWG5ZNr0RE%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1726828374
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 15852
+2 < Server: cloudflare
+2 < CF-RAY: 8c75252288506503-GIG
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+17:46:33.017 [pool-1-thread-8] DEBUG com.intuit.karate - response time in milliseconds: 661
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: aff5cecee27954c0b980e0be911aa3cd
+1 < Date: Sun, 22 Sep 2024 20:46:33 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 53
+{
+    "message": "Este email já está sendo usado"
+}
+
+17:46:33.017 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 668
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 68898a674b56eb8fb2e3930084374b56
+1 < Date: Sun, 22 Sep 2024 20:46:33 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 253
+{
+    "quantidade": 1,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        }
+    ]
+}
+
+17:46:33.017 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 670
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 2aafea70a896e0c3d51b91afff64b8a3
+1 < Date: Sun, 22 Sep 2024 20:46:33 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 464
+{
+    "quantidade": 2,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VAvs6FYlCy7znLhZ"
+        }
+    ]
+}
+
+17:46:33.017 [pool-1-thread-6] DEBUG com.intuit.karate - response time in milliseconds: 668
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: d6e737277bbed34769da1382ed6acc39
+1 < Date: Sun, 22 Sep 2024 20:46:33 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 253
+{
+    "quantidade": 1,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        }
+    ]
+}
+
+17:46:33.120 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 770
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 9aec4a50366d8e7f0f5679be1a99ff40;o=1
+1 < Date: Sun, 22 Sep 2024 20:46:33 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 19689
+{
+    "quantidade": 84,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033479306+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "1DvVyIlgFMrJ2osv"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033360005+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2DHxLpTcsFu5aIOw"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+57ad609f-2e53-46cb-9482-ff2defebbe1b+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2jUfq9CbUQfGF9Ur"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727034860439+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2nMyXYOAcigls8pS"
+        },
+        {
+            "nome": "Lisa Walsh",
+            "email": "39f9c4c0-3949-4a16-a85a-f511bd6fa961@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "4X6K8aV4zaOMtKmN"
+        },
+        {
+            "nome": "Feiteiro Teste APi",
+            "email": "feiteiro@qa.com.br",
+            "password": "feteiro1",
+            "administrador": "true",
+            "_id": "62bECKvmWXEcW3EO"
+        },
+        {
+            "nome": "Kathryn Friesen",
+            "email": "b45ed8d9-2b3b-4360-8c6e-17874d157e62@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "6WOZYDuv2qs3UPzj"
+        },
+        {
+            "nome": "Javier Koepp",
+            "email": "6dc7331a-8715-49df-b818-772745a652a8@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "7GzX2bCLuNdPjGbr"
+        },
+        {
+            "nome": "Cedric Rath",
+            "email": "33691734-4a32-4d63-8a46-78e7feda8970@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "8Gf2zUaNhaMu7S6D"
+        },
+        {
+            "nome": "Jermaine O'Conner",
+            "email": "40cbcdc6-6a5d-47aa-96de-02287ea975fe@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "8WZjvxBmFtVJPDUC"
+        },
+        {
+            "nome": "LEONARDO HILARIO",
+            "email": "hilarioleozinho@gmail.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "8sgnPpYUpKBkbnv6"
+        },
+        {
+            "nome": "Ginger Grady",
+            "email": "7b5bf471-c719-4cd0-9495-47c1048c8ff5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "9rfrBdaMF8RXsXDJ"
+        },
+        {
+            "nome": "Dewey Kihn",
+            "email": "953ebc10-7f70-4f12-a4ab-aa5bb768a9a3@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "A9B8DRmijoM3BStJ"
+        },
+        {
+            "nome": "Mr. Dexter Skiles",
+            "email": "33da88cb-f996-455b-bb6d-140f01008183@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "AYasZn4tpaKTHOvH"
+        },
+        {
+            "nome": "Ismael Murazik",
+            "email": "17b5c5b5-36ee-4523-9fba-df4f63bb9042@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "AaOGVk5kQ55IkFAs"
+        },
+        {
+            "nome": "Leslie Swift",
+            "email": "a933500a-7d1e-4a3f-8917-91e5cc5f2f88@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "BQbQPXVAILsYuABX"
+        },
+        {
+            "nome": "Fannie Kovacek",
+            "email": "a38a0ce9-d760-4082-8dc3-3a879e3275c5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "BfNtjWqp9dkNKXmj"
+        },
+        {
+            "nome": "Lucas",
+            "email": "Lucas@email.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "CDwWPHSSWODm4COy"
+        },
+        {
+            "nome": "Clinton Yost",
+            "email": "9f52766d-8aa9-431f-8457-a98081f3db9e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "DU7NndU8yh9bFpOE"
+        },
+        {
+            "nome": "Myrtle Bayer",
+            "email": "e2e560ca-9589-4954-87ca-7e03e83199b1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "GimyqjPFKtujkZ9L"
+        },
+        {
+            "nome": "Miss Eula Crona",
+            "email": "14ce01a9-49f5-473c-b3f1-b3b7c313bcf1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "HHO7J4WZQwQ5g3qS"
+        },
+        {
+            "nome": "Jo Konopelski",
+            "email": "71315e65-3bd8-454b-8ab4-867eb2e95ef4@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "HvUYIyYxjAsqPq1E"
+        },
+        {
+            "nome": "Kristen Walker I",
+            "email": "6f872165-1c26-4149-a4b2-8810739c1549@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "IOn5hp5Yo6qtBdNf"
+        },
+        {
+            "nome": "Rosemary Bogan",
+            "email": "94f9b1fa-1d46-433a-a1d8-6c11ab8c42d4@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "IsnjYJc6bIcXL4r2"
+        },
+        {
+            "nome": "Rosemary Bergnaum",
+            "email": "8d8082b0-b4f6-4302-9d00-ff1e956b08f9@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "JXfkL3rGFVN7Vn6Q"
+        },
+        {
+            "nome": "Noel Gutmann",
+            "email": "6e171522-20a0-453c-9a43-58c149475d7e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "JdjQ4ToFXcHrOMZc"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033903503+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "JdlJjiL8vMju5k4v"
+        },
+        {
+            "nome": "Elsie Becker",
+            "email": "4be92953-cb3f-4e92-a0f4-bab735fde368@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "KStzbOBoP2WPaYRn"
+        },
+        {
+            "nome": "Rosemary Satterfield",
+            "email": "af73a604-b35e-4785-89b7-021253f4a773@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Kixnis2fKgwr9qdC"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+74b48117-87c7-4b3f-9238-0b3c2af7794a+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "OJkP1PkA2lzoy22b"
+        },
+        {
+            "nome": "Andy Reilly",
+            "email": "e28a853f-c06b-4d35-8a80-6e671b2b384a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OP91FtDlCUeaZGRB"
+        },
+        {
+            "nome": "Ms. Maryann Ziemann II",
+            "email": "b67d30fd-7dd6-44a8-8f36-cbd77e31f5cf@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OwG5CSHRR74AKbzJ"
+        },
+        {
+            "nome": "Melody Rutherford-Jacobi Sr.",
+            "email": "592b095e-a6e8-4494-99f0-eb5853c46dfd@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OyOGafxJvORAcE5t"
+        },
+        {
+            "nome": "Dr. Erin Fritsch",
+            "email": "83c49df5-73e7-4d22-bfbb-bf6c5bfd16ec@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "PAh1PPTnSLtC98Aw"
+        },
+        {
+            "nome": "Mary Brakus",
+            "email": "4ce74aae-e68f-4bfb-8ca6-872519b38edc@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Pij6uyyPgwIYpFpe"
+        },
+        {
+            "nome": "Lucia Pollich",
+            "email": "6e905bf0-356f-41e1-bfad-90db77f2b3a5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Q1O3C7BWkM7Vmnoz"
+        },
+        {
+            "nome": "Grace Reynolds",
+            "email": "b1605ba7-483e-4577-96df-bac1911f167a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Rs4yWApiyv9SLAC6"
+        },
+        {
+            "nome": "Eduardo Brekke",
+            "email": "f633043b-4ae0-407c-8a4b-75d2aaab3216@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "TRgXN6BuiowBeHYQ"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033443887+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "TfJnfEoaSEJuInzR"
+        },
+        {
+            "nome": "Alvin Langosh",
+            "email": "e04eac29-b526-4624-9995-edcd6fe6e511@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Th5vKVjhLw85w5g2"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033818345+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "UT0ZhIbX4KD2bfbg"
+        },
+        {
+            "nome": "Dr. Anne Feest-Batz",
+            "email": "9447a124-5868-492f-b74a-32c88ecb2d9c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "UXzg2xSvogeC9VZ7"
+        },
+        {
+            "nome": "Karla Donnelly I",
+            "email": "0ea592dd-3327-4c0a-bfab-dcf064824cf5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "UnnECT1AOIt8Z1rV"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VAvs6FYlCy7znLhZ"
+        },
+        {
+            "nome": "miguel valentino",
+            "email": "miguelin@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VzTbXRY26vNqE5hW"
+        },
+        {
+            "nome": "Dr. Leroy Monahan",
+            "email": "b3bb9896-0117-4332-b598-6c80cbe7292c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "WUNpIWhUhqvr3tC6"
+        },
+        {
+            "nome": "Heather Murphy IV",
+            "email": "cc5f3d39-5a4a-4264-88f0-8f4defb0506d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Wkau559NUOGVSLhz"
+        },
+        {
+            "nome": "Cornelius Wehner",
+            "email": "142e4fd1-41b5-422a-83a1-15f7a269d535@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "XkCKvu1LCrsNhxGV"
+        },
+        {
+            "nome": "Essie Hahn-Pfannerstill IV",
+            "email": "0a7435c3-e2be-454c-b5ee-4f3ef7a10bbf@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "YGHYWqxBDDWGp1h9"
+        },
+        {
+            "nome": "Guillermo Dickinson",
+            "email": "4eddd5ad-ec24-4633-a0ab-bb315470084b@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "YKpmZRfcPi3rQxXJ"
+        },
+        {
+            "nome": "Bonnie Gutmann",
+            "email": "71c880f4-51f4-4134-b055-5aba4549138d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "an7WSonRrEPVXfCI"
+        },
+        {
+            "nome": "miguel valentino",
+            "email": "miguelino@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "bSLXMIg3cFaPpCc1"
+        },
+        {
+            "nome": "Frank Gutkowski",
+            "email": "20fc20ca-7270-421b-9194-1b2bdda39d45@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "bnru2BSyWB3kbitg"
+        },
+        {
+            "nome": "Annie Glover",
+            "email": "b44f710d-ce36-4519-b01a-e1ce18e0a63a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "buzMRpQDOGyRFQS5"
+        },
+        {
+            "nome": "Tammy Wuckert",
+            "email": "2545ee27-1382-49ad-a4e0-a5b4e0c1dea8@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "cof6il36ZDxm9HZ5"
+        },
+        {
+            "nome": "Jan Kessler",
+            "email": "8c261ca5-f29d-4d28-a0cf-96278b48f46a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "gDN56GhuNiTNzH6J"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+NaN+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "gUVapkKAWriPyp6P"
+        },
+        {
+            "nome": "Hector Hamill",
+            "email": "c6b8392f-778c-4c4a-90a7-c385ed2807f9@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "j9W2LeEgFjcjVipv"
+        },
+        {
+            "nome": "Nancy Quitzon",
+            "email": "7806feb9-7a17-4c60-8656-0deaa2d288da@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "jYPvZXbkx5xKM2GY"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+3+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "lMmar66OC7Q1vT9v"
+        },
+        {
+            "nome": "Bridget Beer",
+            "email": "a27ce49d-8447-421c-b86f-63e737b691ab@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ldF45c4vcKJNKVND"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033856712+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "lp9QolcxjoOh52D3"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+NaN+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "mJ6e72ottL09b5lE"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033944636+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "mfA2W7i6HiRWJnVE"
+        },
+        {
+            "nome": "Alfredo Dooley",
+            "email": "49f9b715-1cb3-490d-b841-38ec3ebdd47c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "mxHbg7yxRgWVWLbT"
+        },
+        {
+            "nome": "Mr. Marco Fisher",
+            "email": "aa384ec8-9a8c-41a4-9521-a1f826a8225d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "mymwNh80V8WA94Xf"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727036024957+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "nZvjTs0PsK0G5bGS"
+        },
+        {
+            "nome": "Bill Goyette",
+            "email": "aeabe63e-aa39-4e54-918d-3f22a5b9fe20@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "nlKgqN4uZz270DwN"
+        },
+        {
+            "nome": "Ricky Moore",
+            "email": "5c94f71e-7796-41ec-b02c-f0d0defb719b@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "oWO6HKfrCphmp9xI"
+        },
+        {
+            "nome": "Isabel Baumbach",
+            "email": "b2dd14fc-a35b-4f02-964e-fd06f0bad461@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ohT2edlTiObZReKm"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033922801+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "pkRppuGrEjeVw8sj"
+        },
+        {
+            "nome": "Beatrice Emard DDS",
+            "email": "f45deccd-0eb0-4814-8ff6-89ca4c6611a1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "qr3UEaHr4oIK3KOg"
+        },
+        {
+            "nome": "Hilda Erdman",
+            "email": "5f68fea3-48a1-4d4b-9d38-f91cd7c5f05e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "rHMg9zSBVpu9QfsF"
+        },
+        {
+            "nome": "Jeffrey Armstrong-Schaden",
+            "email": "af4cea54-1946-466f-8d69-1d1ded6e2ea7@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "s2g20SxHKtARC1WY"
+        },
+        {
+            "nome": "Johnny Stroman",
+            "email": "4af6a910-f772-497a-82b5-d10a4554b608@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "tJRXvfuMImLiO0IK"
+        },
+        {
+            "nome": "Mr. Rick Hudson",
+            "email": "2ad7be54-75b8-4ed4-a793-61a234fc1461@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "tZxdJm5RX8QljMJD"
+        },
+        {
+            "nome": "Wesley Walsh",
+            "email": "307136ed-86ba-42c5-8c69-b7e5e6f9c25f@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "uKuGf8WhkUS1AtDQ"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+7+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "ua62U2uuilC4VI7Q"
+        },
+        {
+            "nome": "Flora Olson",
+            "email": "8ce40e50-f8ef-498e-abe2-8cc62f875f06@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "wBR2ThmP1apU3O7X"
+        },
+        {
+            "nome": "Jean Blick",
+            "email": "85eb2f00-0115-44a4-8b05-c5a99657c96d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "xUL6isVHReAcs5H8"
+        },
+        {
+            "nome": "Laurie Heaney",
+            "email": "cb79d646-d6aa-4aa9-b009-79839e2ae352@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ySysAF1rs4hm4LQL"
+        },
+        {
+            "nome": "Annie Schneider",
+            "email": "71a43249-5cee-476c-9212-f6d49d9a0e40@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "zMhem6pSVBcSQT8j"
+        },
+        {
+            "nome": "Margarita Cormier Jr.",
+            "email": "246857c6-658e-4f67-a27b-05e3ebaaa5a3@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "zRymoviHPyzBzoJE"
+        }
+    ]
+}
+
+17:46:33.120 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 768
+1 < 201
+1 < Date: Sun, 22 Sep 2024 20:46:33 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727037993&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Be%2FoJdU6qerVMMDj2kefVn1FBUllNrLwK85TD99Win0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727037993&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=Be%2FoJdU6qerVMMDj2kefVn1FBUllNrLwK85TD99Win0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1727038041
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 8c7525214d0f6d75-GIG
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+17:46:33.135 [pool-1-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
+17:46:33.145 [pool-1-thread-7] DEBUG com.intuit.karate - response time in milliseconds: 786
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: cb475c1ae0447a2bf5cdd8dfa641696d
+1 < Date: Sun, 22 Sep 2024 20:46:33 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 19689
+{
+    "quantidade": 84,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033479306+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "1DvVyIlgFMrJ2osv"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033360005+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2DHxLpTcsFu5aIOw"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+57ad609f-2e53-46cb-9482-ff2defebbe1b+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2jUfq9CbUQfGF9Ur"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727034860439+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2nMyXYOAcigls8pS"
+        },
+        {
+            "nome": "Lisa Walsh",
+            "email": "39f9c4c0-3949-4a16-a85a-f511bd6fa961@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "4X6K8aV4zaOMtKmN"
+        },
+        {
+            "nome": "Feiteiro Teste APi",
+            "email": "feiteiro@qa.com.br",
+            "password": "feteiro1",
+            "administrador": "true",
+            "_id": "62bECKvmWXEcW3EO"
+        },
+        {
+            "nome": "Kathryn Friesen",
+            "email": "b45ed8d9-2b3b-4360-8c6e-17874d157e62@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "6WOZYDuv2qs3UPzj"
+        },
+        {
+            "nome": "Javier Koepp",
+            "email": "6dc7331a-8715-49df-b818-772745a652a8@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "7GzX2bCLuNdPjGbr"
+        },
+        {
+            "nome": "Cedric Rath",
+            "email": "33691734-4a32-4d63-8a46-78e7feda8970@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "8Gf2zUaNhaMu7S6D"
+        },
+        {
+            "nome": "Jermaine O'Conner",
+            "email": "40cbcdc6-6a5d-47aa-96de-02287ea975fe@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "8WZjvxBmFtVJPDUC"
+        },
+        {
+            "nome": "LEONARDO HILARIO",
+            "email": "hilarioleozinho@gmail.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "8sgnPpYUpKBkbnv6"
+        },
+        {
+            "nome": "Ginger Grady",
+            "email": "7b5bf471-c719-4cd0-9495-47c1048c8ff5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "9rfrBdaMF8RXsXDJ"
+        },
+        {
+            "nome": "Dewey Kihn",
+            "email": "953ebc10-7f70-4f12-a4ab-aa5bb768a9a3@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "A9B8DRmijoM3BStJ"
+        },
+        {
+            "nome": "Mr. Dexter Skiles",
+            "email": "33da88cb-f996-455b-bb6d-140f01008183@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "AYasZn4tpaKTHOvH"
+        },
+        {
+            "nome": "Ismael Murazik",
+            "email": "17b5c5b5-36ee-4523-9fba-df4f63bb9042@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "AaOGVk5kQ55IkFAs"
+        },
+        {
+            "nome": "Leslie Swift",
+            "email": "a933500a-7d1e-4a3f-8917-91e5cc5f2f88@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "BQbQPXVAILsYuABX"
+        },
+        {
+            "nome": "Fannie Kovacek",
+            "email": "a38a0ce9-d760-4082-8dc3-3a879e3275c5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "BfNtjWqp9dkNKXmj"
+        },
+        {
+            "nome": "Lucas",
+            "email": "Lucas@email.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "CDwWPHSSWODm4COy"
+        },
+        {
+            "nome": "Clinton Yost",
+            "email": "9f52766d-8aa9-431f-8457-a98081f3db9e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "DU7NndU8yh9bFpOE"
+        },
+        {
+            "nome": "Myrtle Bayer",
+            "email": "e2e560ca-9589-4954-87ca-7e03e83199b1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "GimyqjPFKtujkZ9L"
+        },
+        {
+            "nome": "Miss Eula Crona",
+            "email": "14ce01a9-49f5-473c-b3f1-b3b7c313bcf1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "HHO7J4WZQwQ5g3qS"
+        },
+        {
+            "nome": "Jo Konopelski",
+            "email": "71315e65-3bd8-454b-8ab4-867eb2e95ef4@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "HvUYIyYxjAsqPq1E"
+        },
+        {
+            "nome": "Kristen Walker I",
+            "email": "6f872165-1c26-4149-a4b2-8810739c1549@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "IOn5hp5Yo6qtBdNf"
+        },
+        {
+            "nome": "Rosemary Bogan",
+            "email": "94f9b1fa-1d46-433a-a1d8-6c11ab8c42d4@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "IsnjYJc6bIcXL4r2"
+        },
+        {
+            "nome": "Rosemary Bergnaum",
+            "email": "8d8082b0-b4f6-4302-9d00-ff1e956b08f9@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "JXfkL3rGFVN7Vn6Q"
+        },
+        {
+            "nome": "Noel Gutmann",
+            "email": "6e171522-20a0-453c-9a43-58c149475d7e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "JdjQ4ToFXcHrOMZc"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033903503+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "JdlJjiL8vMju5k4v"
+        },
+        {
+            "nome": "Elsie Becker",
+            "email": "4be92953-cb3f-4e92-a0f4-bab735fde368@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "KStzbOBoP2WPaYRn"
+        },
+        {
+            "nome": "Rosemary Satterfield",
+            "email": "af73a604-b35e-4785-89b7-021253f4a773@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Kixnis2fKgwr9qdC"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+74b48117-87c7-4b3f-9238-0b3c2af7794a+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "OJkP1PkA2lzoy22b"
+        },
+        {
+            "nome": "Andy Reilly",
+            "email": "e28a853f-c06b-4d35-8a80-6e671b2b384a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OP91FtDlCUeaZGRB"
+        },
+        {
+            "nome": "Ms. Maryann Ziemann II",
+            "email": "b67d30fd-7dd6-44a8-8f36-cbd77e31f5cf@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OwG5CSHRR74AKbzJ"
+        },
+        {
+            "nome": "Melody Rutherford-Jacobi Sr.",
+            "email": "592b095e-a6e8-4494-99f0-eb5853c46dfd@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OyOGafxJvORAcE5t"
+        },
+        {
+            "nome": "Dr. Erin Fritsch",
+            "email": "83c49df5-73e7-4d22-bfbb-bf6c5bfd16ec@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "PAh1PPTnSLtC98Aw"
+        },
+        {
+            "nome": "Mary Brakus",
+            "email": "4ce74aae-e68f-4bfb-8ca6-872519b38edc@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Pij6uyyPgwIYpFpe"
+        },
+        {
+            "nome": "Lucia Pollich",
+            "email": "6e905bf0-356f-41e1-bfad-90db77f2b3a5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Q1O3C7BWkM7Vmnoz"
+        },
+        {
+            "nome": "Grace Reynolds",
+            "email": "b1605ba7-483e-4577-96df-bac1911f167a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Rs4yWApiyv9SLAC6"
+        },
+        {
+            "nome": "Eduardo Brekke",
+            "email": "f633043b-4ae0-407c-8a4b-75d2aaab3216@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "TRgXN6BuiowBeHYQ"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033443887+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "TfJnfEoaSEJuInzR"
+        },
+        {
+            "nome": "Alvin Langosh",
+            "email": "e04eac29-b526-4624-9995-edcd6fe6e511@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Th5vKVjhLw85w5g2"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033818345+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "UT0ZhIbX4KD2bfbg"
+        },
+        {
+            "nome": "Dr. Anne Feest-Batz",
+            "email": "9447a124-5868-492f-b74a-32c88ecb2d9c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "UXzg2xSvogeC9VZ7"
+        },
+        {
+            "nome": "Karla Donnelly I",
+            "email": "0ea592dd-3327-4c0a-bfab-dcf064824cf5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "UnnECT1AOIt8Z1rV"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VAvs6FYlCy7znLhZ"
+        },
+        {
+            "nome": "miguel valentino",
+            "email": "miguelin@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VzTbXRY26vNqE5hW"
+        },
+        {
+            "nome": "Dr. Leroy Monahan",
+            "email": "b3bb9896-0117-4332-b598-6c80cbe7292c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "WUNpIWhUhqvr3tC6"
+        },
+        {
+            "nome": "Heather Murphy IV",
+            "email": "cc5f3d39-5a4a-4264-88f0-8f4defb0506d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Wkau559NUOGVSLhz"
+        },
+        {
+            "nome": "Cornelius Wehner",
+            "email": "142e4fd1-41b5-422a-83a1-15f7a269d535@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "XkCKvu1LCrsNhxGV"
+        },
+        {
+            "nome": "Essie Hahn-Pfannerstill IV",
+            "email": "0a7435c3-e2be-454c-b5ee-4f3ef7a10bbf@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "YGHYWqxBDDWGp1h9"
+        },
+        {
+            "nome": "Guillermo Dickinson",
+            "email": "4eddd5ad-ec24-4633-a0ab-bb315470084b@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "YKpmZRfcPi3rQxXJ"
+        },
+        {
+            "nome": "Bonnie Gutmann",
+            "email": "71c880f4-51f4-4134-b055-5aba4549138d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "an7WSonRrEPVXfCI"
+        },
+        {
+            "nome": "miguel valentino",
+            "email": "miguelino@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "bSLXMIg3cFaPpCc1"
+        },
+        {
+            "nome": "Frank Gutkowski",
+            "email": "20fc20ca-7270-421b-9194-1b2bdda39d45@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "bnru2BSyWB3kbitg"
+        },
+        {
+            "nome": "Annie Glover",
+            "email": "b44f710d-ce36-4519-b01a-e1ce18e0a63a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "buzMRpQDOGyRFQS5"
+        },
+        {
+            "nome": "Tammy Wuckert",
+            "email": "2545ee27-1382-49ad-a4e0-a5b4e0c1dea8@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "cof6il36ZDxm9HZ5"
+        },
+        {
+            "nome": "Jan Kessler",
+            "email": "8c261ca5-f29d-4d28-a0cf-96278b48f46a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "gDN56GhuNiTNzH6J"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+NaN+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "gUVapkKAWriPyp6P"
+        },
+        {
+            "nome": "Hector Hamill",
+            "email": "c6b8392f-778c-4c4a-90a7-c385ed2807f9@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "j9W2LeEgFjcjVipv"
+        },
+        {
+            "nome": "Nancy Quitzon",
+            "email": "7806feb9-7a17-4c60-8656-0deaa2d288da@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "jYPvZXbkx5xKM2GY"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+3+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "lMmar66OC7Q1vT9v"
+        },
+        {
+            "nome": "Bridget Beer",
+            "email": "a27ce49d-8447-421c-b86f-63e737b691ab@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ldF45c4vcKJNKVND"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033856712+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "lp9QolcxjoOh52D3"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+NaN+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "mJ6e72ottL09b5lE"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033944636+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "mfA2W7i6HiRWJnVE"
+        },
+        {
+            "nome": "Alfredo Dooley",
+            "email": "49f9b715-1cb3-490d-b841-38ec3ebdd47c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "mxHbg7yxRgWVWLbT"
+        },
+        {
+            "nome": "Mr. Marco Fisher",
+            "email": "aa384ec8-9a8c-41a4-9521-a1f826a8225d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "mymwNh80V8WA94Xf"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727036024957+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "nZvjTs0PsK0G5bGS"
+        },
+        {
+            "nome": "Bill Goyette",
+            "email": "aeabe63e-aa39-4e54-918d-3f22a5b9fe20@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "nlKgqN4uZz270DwN"
+        },
+        {
+            "nome": "Ricky Moore",
+            "email": "5c94f71e-7796-41ec-b02c-f0d0defb719b@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "oWO6HKfrCphmp9xI"
+        },
+        {
+            "nome": "Isabel Baumbach",
+            "email": "b2dd14fc-a35b-4f02-964e-fd06f0bad461@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ohT2edlTiObZReKm"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033922801+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "pkRppuGrEjeVw8sj"
+        },
+        {
+            "nome": "Beatrice Emard DDS",
+            "email": "f45deccd-0eb0-4814-8ff6-89ca4c6611a1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "qr3UEaHr4oIK3KOg"
+        },
+        {
+            "nome": "Hilda Erdman",
+            "email": "5f68fea3-48a1-4d4b-9d38-f91cd7c5f05e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "rHMg9zSBVpu9QfsF"
+        },
+        {
+            "nome": "Jeffrey Armstrong-Schaden",
+            "email": "af4cea54-1946-466f-8d69-1d1ded6e2ea7@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "s2g20SxHKtARC1WY"
+        },
+        {
+            "nome": "Johnny Stroman",
+            "email": "4af6a910-f772-497a-82b5-d10a4554b608@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "tJRXvfuMImLiO0IK"
+        },
+        {
+            "nome": "Mr. Rick Hudson",
+            "email": "2ad7be54-75b8-4ed4-a793-61a234fc1461@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "tZxdJm5RX8QljMJD"
+        },
+        {
+            "nome": "Wesley Walsh",
+            "email": "307136ed-86ba-42c5-8c69-b7e5e6f9c25f@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "uKuGf8WhkUS1AtDQ"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+7+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "ua62U2uuilC4VI7Q"
+        },
+        {
+            "nome": "Flora Olson",
+            "email": "8ce40e50-f8ef-498e-abe2-8cc62f875f06@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "wBR2ThmP1apU3O7X"
+        },
+        {
+            "nome": "Jean Blick",
+            "email": "85eb2f00-0115-44a4-8b05-c5a99657c96d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "xUL6isVHReAcs5H8"
+        },
+        {
+            "nome": "Laurie Heaney",
+            "email": "cb79d646-d6aa-4aa9-b009-79839e2ae352@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ySysAF1rs4hm4LQL"
+        },
+        {
+            "nome": "Annie Schneider",
+            "email": "71a43249-5cee-476c-9212-f6d49d9a0e40@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "zMhem6pSVBcSQT8j"
+        },
+        {
+            "nome": "Margarita Cormier Jr.",
+            "email": "246857c6-658e-4f67-a27b-05e3ebaaa5a3@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "zRymoviHPyzBzoJE"
+        }
+    ]
+}
+
+17:46:34.155 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:examples/usersKarateTemplate/users.feature
+17:46:34.522 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:examples/WebinarBase2/GET/usuarios.feature
+17:46:34.648 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 3 of 3 (0 remaining) classpath:examples/WebinarBase2/POST/post_usuarios.feature
+17:48:07.120 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:48:07.131 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1727038087131
+17:48:07.147 [main] DEBUG com.intuit.karate.Suite - waiting for 3 features to complete
+17:48:08.825 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:48:08.819 [pool-1-thread-6] INFO  com.intuit.karate - karate.env system property was: null 
+17:48:08.819 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+17:48:08.819 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:48:08.878 [pool-1-thread-9] INFO  com.intuit.karate - karate.env system property was: null 
+17:48:08.879 [pool-1-thread-7] INFO  com.intuit.karate - karate.env system property was: null 
+17:48:08.880 [pool-1-thread-8] INFO  com.intuit.karate - karate.env system property was: null 
+17:48:08.883 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:48:08.884 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:48:09.038 [pool-1-thread-9] INFO  com.intuit.karate - [print] hilarioleo+1727038089038+@gmail.com 
+17:48:09.390 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:48:09.390 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?nome=Fulano+da+Silva
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:48:09.390 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?nome=Fulano+da+Silva&email=fulano%40qa.com
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:48:09.391 [pool-1-thread-7] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:48:09.391 [pool-1-thread-6] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios?nome=Fulano+da+Silva&email=fulano%40qa.com
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:48:09.391 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://serverest.dev/usuarios
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:48:09.392 [pool-1-thread-8] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 105
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"LEONARDO HILARIO","email":"hilarioleozinho@gmail.com","password":"teste","administrador":"true"}
+
+17:48:09.392 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+17:48:09.392 [pool-1-thread-9] DEBUG com.intuit.karate - request:
+1 > POST https://serverest.dev/usuarios
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 107
+1 > Host: serverest.dev
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+{"nome":"Gessica","email":"hilarioleo+1727038089038+@gmail.com","password":"123456","administrador":"true"}
+
+17:48:09.885 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 495
+1 < 200
+1 < Date: Sun, 22 Sep 2024 20:48:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722456807&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=zPzfq5F6Ap%2Bb%2BR18Bs8ry6EPfgg%2FndwzOlYujE49i6g%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1722456807&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=zPzfq5F6Ap%2Bb%2BR18Bs8ry6EPfgg%2FndwzOlYujE49i6g%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 997
+1 < X-Ratelimit-Reset: 1722456829
+1 < Vary: Origin, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: max-age=43200
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 15675
+1 < Server: cloudflare
+1 < CF-RAY: 8c75277ff87e6d42-GIG
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+17:48:09.917 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+2 > Accept-Encoding: gzip,deflate
+
+
+17:48:10.074 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 157
+2 < 200
+2 < Date: Sun, 22 Sep 2024 20:48:10 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1726828357&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=CJ2mTytgEwZpVbg%2B4tQeWJVdowCNQybG7cWG5ZNr0RE%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1726828357&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=CJ2mTytgEwZpVbg%2B4tQeWJVdowCNQybG7cWG5ZNr0RE%3D
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < X-Powered-By: Express
+2 < X-Ratelimit-Limit: 1000
+2 < X-Ratelimit-Remaining: 999
+2 < X-Ratelimit-Reset: 1726828374
+2 < Vary: Origin, Accept-Encoding
+2 < Access-Control-Allow-Credentials: true
+2 < Cache-Control: max-age=43200
+2 < Pragma: no-cache
+2 < Expires: -1
+2 < X-Content-Type-Options: nosniff
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 15949
+2 < Server: cloudflare
+2 < CF-RAY: 8c7527815ed8ca97-GIG
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+17:48:10.112 [pool-1-thread-8] DEBUG com.intuit.karate - response time in milliseconds: 713
+1 < 400
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: a048090bb385bfc620b4f8c20db025fd
+1 < Date: Sun, 22 Sep 2024 20:48:10 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 53
+{
+    "message": "Este email já está sendo usado"
+}
+
+17:48:10.121 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 731
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 4d3899bb0b9c36187e3acff7e2d67618
+1 < Date: Sun, 22 Sep 2024 20:48:10 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 464
+{
+    "quantidade": 2,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VAvs6FYlCy7znLhZ"
+        }
+    ]
+}
+
+17:48:10.137 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 746
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: cb0c88e892d69294dd5b7244118de39f;o=1
+1 < Date: Sun, 22 Sep 2024 20:48:10 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 253
+{
+    "quantidade": 1,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        }
+    ]
+}
+
+17:48:10.153 [pool-1-thread-9] DEBUG com.intuit.karate - response time in milliseconds: 760
+1 < 201
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 81ac99ace0137ba0587ebbfa1d49a13b
+1 < Date: Sun, 22 Sep 2024 20:48:10 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 82
+{
+    "message": "Cadastro realizado com sucesso",
+    "_id": "emdmhu4UWMpDOLi5"
+}
+
+17:48:10.200 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 808
+1 < 201
+1 < Date: Sun, 22 Sep 2024 20:48:10 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1727038090&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=%2Fvg9Xkdjdzo1gTOerHjHQowT7%2Ftgt8XMGu2z85QcSv0%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1727038090&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=%2Fvg9Xkdjdzo1gTOerHjHQowT7%2Ftgt8XMGu2z85QcSv0%3D
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1727038101
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: https://jsonplaceholder.typicode.com/users/11
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Server: cloudflare
+1 < CF-RAY: 8c75277fff92650b-GIG
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+17:48:10.200 [pool-1-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
+17:48:10.200 [pool-1-thread-6] DEBUG com.intuit.karate - response time in milliseconds: 809
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 7efd7f937b965f5a449b28145229f9e0
+1 < Date: Sun, 22 Sep 2024 20:48:10 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 253
+{
+    "quantidade": 1,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        }
+    ]
+}
+
+17:48:10.247 [pool-1-thread-7] DEBUG com.intuit.karate - response time in milliseconds: 856
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: ac42567977ddc1434dbdc90062778f25
+1 < Date: Sun, 22 Sep 2024 20:48:10 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 19689
+{
+    "quantidade": 84,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033479306+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "1DvVyIlgFMrJ2osv"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033360005+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2DHxLpTcsFu5aIOw"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+57ad609f-2e53-46cb-9482-ff2defebbe1b+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2jUfq9CbUQfGF9Ur"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727034860439+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2nMyXYOAcigls8pS"
+        },
+        {
+            "nome": "Lisa Walsh",
+            "email": "39f9c4c0-3949-4a16-a85a-f511bd6fa961@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "4X6K8aV4zaOMtKmN"
+        },
+        {
+            "nome": "Feiteiro Teste APi",
+            "email": "feiteiro@qa.com.br",
+            "password": "feteiro1",
+            "administrador": "true",
+            "_id": "62bECKvmWXEcW3EO"
+        },
+        {
+            "nome": "Kathryn Friesen",
+            "email": "b45ed8d9-2b3b-4360-8c6e-17874d157e62@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "6WOZYDuv2qs3UPzj"
+        },
+        {
+            "nome": "Javier Koepp",
+            "email": "6dc7331a-8715-49df-b818-772745a652a8@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "7GzX2bCLuNdPjGbr"
+        },
+        {
+            "nome": "Cedric Rath",
+            "email": "33691734-4a32-4d63-8a46-78e7feda8970@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "8Gf2zUaNhaMu7S6D"
+        },
+        {
+            "nome": "Jermaine O'Conner",
+            "email": "40cbcdc6-6a5d-47aa-96de-02287ea975fe@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "8WZjvxBmFtVJPDUC"
+        },
+        {
+            "nome": "LEONARDO HILARIO",
+            "email": "hilarioleozinho@gmail.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "8sgnPpYUpKBkbnv6"
+        },
+        {
+            "nome": "Ginger Grady",
+            "email": "7b5bf471-c719-4cd0-9495-47c1048c8ff5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "9rfrBdaMF8RXsXDJ"
+        },
+        {
+            "nome": "Dewey Kihn",
+            "email": "953ebc10-7f70-4f12-a4ab-aa5bb768a9a3@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "A9B8DRmijoM3BStJ"
+        },
+        {
+            "nome": "Mr. Dexter Skiles",
+            "email": "33da88cb-f996-455b-bb6d-140f01008183@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "AYasZn4tpaKTHOvH"
+        },
+        {
+            "nome": "Ismael Murazik",
+            "email": "17b5c5b5-36ee-4523-9fba-df4f63bb9042@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "AaOGVk5kQ55IkFAs"
+        },
+        {
+            "nome": "Leslie Swift",
+            "email": "a933500a-7d1e-4a3f-8917-91e5cc5f2f88@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "BQbQPXVAILsYuABX"
+        },
+        {
+            "nome": "Fannie Kovacek",
+            "email": "a38a0ce9-d760-4082-8dc3-3a879e3275c5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "BfNtjWqp9dkNKXmj"
+        },
+        {
+            "nome": "Lucas",
+            "email": "Lucas@email.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "CDwWPHSSWODm4COy"
+        },
+        {
+            "nome": "Clinton Yost",
+            "email": "9f52766d-8aa9-431f-8457-a98081f3db9e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "DU7NndU8yh9bFpOE"
+        },
+        {
+            "nome": "Myrtle Bayer",
+            "email": "e2e560ca-9589-4954-87ca-7e03e83199b1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "GimyqjPFKtujkZ9L"
+        },
+        {
+            "nome": "Miss Eula Crona",
+            "email": "14ce01a9-49f5-473c-b3f1-b3b7c313bcf1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "HHO7J4WZQwQ5g3qS"
+        },
+        {
+            "nome": "Jo Konopelski",
+            "email": "71315e65-3bd8-454b-8ab4-867eb2e95ef4@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "HvUYIyYxjAsqPq1E"
+        },
+        {
+            "nome": "Kristen Walker I",
+            "email": "6f872165-1c26-4149-a4b2-8810739c1549@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "IOn5hp5Yo6qtBdNf"
+        },
+        {
+            "nome": "Rosemary Bogan",
+            "email": "94f9b1fa-1d46-433a-a1d8-6c11ab8c42d4@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "IsnjYJc6bIcXL4r2"
+        },
+        {
+            "nome": "Rosemary Bergnaum",
+            "email": "8d8082b0-b4f6-4302-9d00-ff1e956b08f9@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "JXfkL3rGFVN7Vn6Q"
+        },
+        {
+            "nome": "Noel Gutmann",
+            "email": "6e171522-20a0-453c-9a43-58c149475d7e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "JdjQ4ToFXcHrOMZc"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033903503+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "JdlJjiL8vMju5k4v"
+        },
+        {
+            "nome": "Elsie Becker",
+            "email": "4be92953-cb3f-4e92-a0f4-bab735fde368@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "KStzbOBoP2WPaYRn"
+        },
+        {
+            "nome": "Rosemary Satterfield",
+            "email": "af73a604-b35e-4785-89b7-021253f4a773@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Kixnis2fKgwr9qdC"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+74b48117-87c7-4b3f-9238-0b3c2af7794a+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "OJkP1PkA2lzoy22b"
+        },
+        {
+            "nome": "Andy Reilly",
+            "email": "e28a853f-c06b-4d35-8a80-6e671b2b384a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OP91FtDlCUeaZGRB"
+        },
+        {
+            "nome": "Ms. Maryann Ziemann II",
+            "email": "b67d30fd-7dd6-44a8-8f36-cbd77e31f5cf@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OwG5CSHRR74AKbzJ"
+        },
+        {
+            "nome": "Melody Rutherford-Jacobi Sr.",
+            "email": "592b095e-a6e8-4494-99f0-eb5853c46dfd@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OyOGafxJvORAcE5t"
+        },
+        {
+            "nome": "Dr. Erin Fritsch",
+            "email": "83c49df5-73e7-4d22-bfbb-bf6c5bfd16ec@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "PAh1PPTnSLtC98Aw"
+        },
+        {
+            "nome": "Mary Brakus",
+            "email": "4ce74aae-e68f-4bfb-8ca6-872519b38edc@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Pij6uyyPgwIYpFpe"
+        },
+        {
+            "nome": "Lucia Pollich",
+            "email": "6e905bf0-356f-41e1-bfad-90db77f2b3a5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Q1O3C7BWkM7Vmnoz"
+        },
+        {
+            "nome": "Grace Reynolds",
+            "email": "b1605ba7-483e-4577-96df-bac1911f167a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Rs4yWApiyv9SLAC6"
+        },
+        {
+            "nome": "Eduardo Brekke",
+            "email": "f633043b-4ae0-407c-8a4b-75d2aaab3216@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "TRgXN6BuiowBeHYQ"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033443887+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "TfJnfEoaSEJuInzR"
+        },
+        {
+            "nome": "Alvin Langosh",
+            "email": "e04eac29-b526-4624-9995-edcd6fe6e511@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Th5vKVjhLw85w5g2"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033818345+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "UT0ZhIbX4KD2bfbg"
+        },
+        {
+            "nome": "Dr. Anne Feest-Batz",
+            "email": "9447a124-5868-492f-b74a-32c88ecb2d9c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "UXzg2xSvogeC9VZ7"
+        },
+        {
+            "nome": "Karla Donnelly I",
+            "email": "0ea592dd-3327-4c0a-bfab-dcf064824cf5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "UnnECT1AOIt8Z1rV"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VAvs6FYlCy7znLhZ"
+        },
+        {
+            "nome": "miguel valentino",
+            "email": "miguelin@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VzTbXRY26vNqE5hW"
+        },
+        {
+            "nome": "Dr. Leroy Monahan",
+            "email": "b3bb9896-0117-4332-b598-6c80cbe7292c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "WUNpIWhUhqvr3tC6"
+        },
+        {
+            "nome": "Heather Murphy IV",
+            "email": "cc5f3d39-5a4a-4264-88f0-8f4defb0506d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Wkau559NUOGVSLhz"
+        },
+        {
+            "nome": "Cornelius Wehner",
+            "email": "142e4fd1-41b5-422a-83a1-15f7a269d535@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "XkCKvu1LCrsNhxGV"
+        },
+        {
+            "nome": "Essie Hahn-Pfannerstill IV",
+            "email": "0a7435c3-e2be-454c-b5ee-4f3ef7a10bbf@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "YGHYWqxBDDWGp1h9"
+        },
+        {
+            "nome": "Guillermo Dickinson",
+            "email": "4eddd5ad-ec24-4633-a0ab-bb315470084b@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "YKpmZRfcPi3rQxXJ"
+        },
+        {
+            "nome": "Bonnie Gutmann",
+            "email": "71c880f4-51f4-4134-b055-5aba4549138d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "an7WSonRrEPVXfCI"
+        },
+        {
+            "nome": "miguel valentino",
+            "email": "miguelino@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "bSLXMIg3cFaPpCc1"
+        },
+        {
+            "nome": "Frank Gutkowski",
+            "email": "20fc20ca-7270-421b-9194-1b2bdda39d45@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "bnru2BSyWB3kbitg"
+        },
+        {
+            "nome": "Annie Glover",
+            "email": "b44f710d-ce36-4519-b01a-e1ce18e0a63a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "buzMRpQDOGyRFQS5"
+        },
+        {
+            "nome": "Tammy Wuckert",
+            "email": "2545ee27-1382-49ad-a4e0-a5b4e0c1dea8@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "cof6il36ZDxm9HZ5"
+        },
+        {
+            "nome": "Jan Kessler",
+            "email": "8c261ca5-f29d-4d28-a0cf-96278b48f46a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "gDN56GhuNiTNzH6J"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+NaN+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "gUVapkKAWriPyp6P"
+        },
+        {
+            "nome": "Hector Hamill",
+            "email": "c6b8392f-778c-4c4a-90a7-c385ed2807f9@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "j9W2LeEgFjcjVipv"
+        },
+        {
+            "nome": "Nancy Quitzon",
+            "email": "7806feb9-7a17-4c60-8656-0deaa2d288da@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "jYPvZXbkx5xKM2GY"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+3+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "lMmar66OC7Q1vT9v"
+        },
+        {
+            "nome": "Bridget Beer",
+            "email": "a27ce49d-8447-421c-b86f-63e737b691ab@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ldF45c4vcKJNKVND"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033856712+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "lp9QolcxjoOh52D3"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+NaN+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "mJ6e72ottL09b5lE"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033944636+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "mfA2W7i6HiRWJnVE"
+        },
+        {
+            "nome": "Alfredo Dooley",
+            "email": "49f9b715-1cb3-490d-b841-38ec3ebdd47c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "mxHbg7yxRgWVWLbT"
+        },
+        {
+            "nome": "Mr. Marco Fisher",
+            "email": "aa384ec8-9a8c-41a4-9521-a1f826a8225d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "mymwNh80V8WA94Xf"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727036024957+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "nZvjTs0PsK0G5bGS"
+        },
+        {
+            "nome": "Bill Goyette",
+            "email": "aeabe63e-aa39-4e54-918d-3f22a5b9fe20@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "nlKgqN4uZz270DwN"
+        },
+        {
+            "nome": "Ricky Moore",
+            "email": "5c94f71e-7796-41ec-b02c-f0d0defb719b@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "oWO6HKfrCphmp9xI"
+        },
+        {
+            "nome": "Isabel Baumbach",
+            "email": "b2dd14fc-a35b-4f02-964e-fd06f0bad461@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ohT2edlTiObZReKm"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033922801+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "pkRppuGrEjeVw8sj"
+        },
+        {
+            "nome": "Beatrice Emard DDS",
+            "email": "f45deccd-0eb0-4814-8ff6-89ca4c6611a1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "qr3UEaHr4oIK3KOg"
+        },
+        {
+            "nome": "Hilda Erdman",
+            "email": "5f68fea3-48a1-4d4b-9d38-f91cd7c5f05e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "rHMg9zSBVpu9QfsF"
+        },
+        {
+            "nome": "Jeffrey Armstrong-Schaden",
+            "email": "af4cea54-1946-466f-8d69-1d1ded6e2ea7@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "s2g20SxHKtARC1WY"
+        },
+        {
+            "nome": "Johnny Stroman",
+            "email": "4af6a910-f772-497a-82b5-d10a4554b608@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "tJRXvfuMImLiO0IK"
+        },
+        {
+            "nome": "Mr. Rick Hudson",
+            "email": "2ad7be54-75b8-4ed4-a793-61a234fc1461@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "tZxdJm5RX8QljMJD"
+        },
+        {
+            "nome": "Wesley Walsh",
+            "email": "307136ed-86ba-42c5-8c69-b7e5e6f9c25f@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "uKuGf8WhkUS1AtDQ"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+7+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "ua62U2uuilC4VI7Q"
+        },
+        {
+            "nome": "Flora Olson",
+            "email": "8ce40e50-f8ef-498e-abe2-8cc62f875f06@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "wBR2ThmP1apU3O7X"
+        },
+        {
+            "nome": "Jean Blick",
+            "email": "85eb2f00-0115-44a4-8b05-c5a99657c96d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "xUL6isVHReAcs5H8"
+        },
+        {
+            "nome": "Laurie Heaney",
+            "email": "cb79d646-d6aa-4aa9-b009-79839e2ae352@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ySysAF1rs4hm4LQL"
+        },
+        {
+            "nome": "Annie Schneider",
+            "email": "71a43249-5cee-476c-9212-f6d49d9a0e40@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "zMhem6pSVBcSQT8j"
+        },
+        {
+            "nome": "Margarita Cormier Jr.",
+            "email": "246857c6-658e-4f67-a27b-05e3ebaaa5a3@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "zRymoviHPyzBzoJE"
+        }
+    ]
+}
+
+17:48:10.247 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 856
+1 < 200
+1 < access-control-allow-origin: *
+1 < x-dns-prefetch-control: off
+1 < x-frame-options: SAMEORIGIN
+1 < strict-transport-security: max-age=15552000; includeSubDomains
+1 < x-download-options: noopen
+1 < x-content-type-options: nosniff
+1 < x-xss-protection: 1; mode=block
+1 < content-type: application/json; charset=utf-8
+1 < X-Cloud-Trace-Context: 19a620f0ee7575d1ecb7d7d838a416bd
+1 < Date: Sun, 22 Sep 2024 20:48:10 GMT
+1 < Server: Google Frontend
+1 < Content-Length: 19689
+{
+    "quantidade": 84,
+    "usuarios": [
+        {
+            "nome": "Fulano da Silva",
+            "email": "fulano@qa.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "0uxuPY0cbmQhpEz1"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033479306+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "1DvVyIlgFMrJ2osv"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033360005+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2DHxLpTcsFu5aIOw"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+57ad609f-2e53-46cb-9482-ff2defebbe1b+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2jUfq9CbUQfGF9Ur"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727034860439+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "2nMyXYOAcigls8pS"
+        },
+        {
+            "nome": "Lisa Walsh",
+            "email": "39f9c4c0-3949-4a16-a85a-f511bd6fa961@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "4X6K8aV4zaOMtKmN"
+        },
+        {
+            "nome": "Feiteiro Teste APi",
+            "email": "feiteiro@qa.com.br",
+            "password": "feteiro1",
+            "administrador": "true",
+            "_id": "62bECKvmWXEcW3EO"
+        },
+        {
+            "nome": "Kathryn Friesen",
+            "email": "b45ed8d9-2b3b-4360-8c6e-17874d157e62@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "6WOZYDuv2qs3UPzj"
+        },
+        {
+            "nome": "Javier Koepp",
+            "email": "6dc7331a-8715-49df-b818-772745a652a8@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "7GzX2bCLuNdPjGbr"
+        },
+        {
+            "nome": "Cedric Rath",
+            "email": "33691734-4a32-4d63-8a46-78e7feda8970@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "8Gf2zUaNhaMu7S6D"
+        },
+        {
+            "nome": "Jermaine O'Conner",
+            "email": "40cbcdc6-6a5d-47aa-96de-02287ea975fe@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "8WZjvxBmFtVJPDUC"
+        },
+        {
+            "nome": "LEONARDO HILARIO",
+            "email": "hilarioleozinho@gmail.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "8sgnPpYUpKBkbnv6"
+        },
+        {
+            "nome": "Ginger Grady",
+            "email": "7b5bf471-c719-4cd0-9495-47c1048c8ff5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "9rfrBdaMF8RXsXDJ"
+        },
+        {
+            "nome": "Dewey Kihn",
+            "email": "953ebc10-7f70-4f12-a4ab-aa5bb768a9a3@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "A9B8DRmijoM3BStJ"
+        },
+        {
+            "nome": "Mr. Dexter Skiles",
+            "email": "33da88cb-f996-455b-bb6d-140f01008183@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "AYasZn4tpaKTHOvH"
+        },
+        {
+            "nome": "Ismael Murazik",
+            "email": "17b5c5b5-36ee-4523-9fba-df4f63bb9042@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "AaOGVk5kQ55IkFAs"
+        },
+        {
+            "nome": "Leslie Swift",
+            "email": "a933500a-7d1e-4a3f-8917-91e5cc5f2f88@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "BQbQPXVAILsYuABX"
+        },
+        {
+            "nome": "Fannie Kovacek",
+            "email": "a38a0ce9-d760-4082-8dc3-3a879e3275c5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "BfNtjWqp9dkNKXmj"
+        },
+        {
+            "nome": "Lucas",
+            "email": "Lucas@email.com",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "CDwWPHSSWODm4COy"
+        },
+        {
+            "nome": "Clinton Yost",
+            "email": "9f52766d-8aa9-431f-8457-a98081f3db9e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "DU7NndU8yh9bFpOE"
+        },
+        {
+            "nome": "Myrtle Bayer",
+            "email": "e2e560ca-9589-4954-87ca-7e03e83199b1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "GimyqjPFKtujkZ9L"
+        },
+        {
+            "nome": "Miss Eula Crona",
+            "email": "14ce01a9-49f5-473c-b3f1-b3b7c313bcf1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "HHO7J4WZQwQ5g3qS"
+        },
+        {
+            "nome": "Jo Konopelski",
+            "email": "71315e65-3bd8-454b-8ab4-867eb2e95ef4@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "HvUYIyYxjAsqPq1E"
+        },
+        {
+            "nome": "Kristen Walker I",
+            "email": "6f872165-1c26-4149-a4b2-8810739c1549@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "IOn5hp5Yo6qtBdNf"
+        },
+        {
+            "nome": "Rosemary Bogan",
+            "email": "94f9b1fa-1d46-433a-a1d8-6c11ab8c42d4@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "IsnjYJc6bIcXL4r2"
+        },
+        {
+            "nome": "Rosemary Bergnaum",
+            "email": "8d8082b0-b4f6-4302-9d00-ff1e956b08f9@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "JXfkL3rGFVN7Vn6Q"
+        },
+        {
+            "nome": "Noel Gutmann",
+            "email": "6e171522-20a0-453c-9a43-58c149475d7e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "JdjQ4ToFXcHrOMZc"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033903503+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "JdlJjiL8vMju5k4v"
+        },
+        {
+            "nome": "Elsie Becker",
+            "email": "4be92953-cb3f-4e92-a0f4-bab735fde368@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "KStzbOBoP2WPaYRn"
+        },
+        {
+            "nome": "Rosemary Satterfield",
+            "email": "af73a604-b35e-4785-89b7-021253f4a773@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Kixnis2fKgwr9qdC"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+74b48117-87c7-4b3f-9238-0b3c2af7794a+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "OJkP1PkA2lzoy22b"
+        },
+        {
+            "nome": "Andy Reilly",
+            "email": "e28a853f-c06b-4d35-8a80-6e671b2b384a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OP91FtDlCUeaZGRB"
+        },
+        {
+            "nome": "Ms. Maryann Ziemann II",
+            "email": "b67d30fd-7dd6-44a8-8f36-cbd77e31f5cf@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OwG5CSHRR74AKbzJ"
+        },
+        {
+            "nome": "Melody Rutherford-Jacobi Sr.",
+            "email": "592b095e-a6e8-4494-99f0-eb5853c46dfd@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "OyOGafxJvORAcE5t"
+        },
+        {
+            "nome": "Dr. Erin Fritsch",
+            "email": "83c49df5-73e7-4d22-bfbb-bf6c5bfd16ec@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "PAh1PPTnSLtC98Aw"
+        },
+        {
+            "nome": "Mary Brakus",
+            "email": "4ce74aae-e68f-4bfb-8ca6-872519b38edc@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Pij6uyyPgwIYpFpe"
+        },
+        {
+            "nome": "Lucia Pollich",
+            "email": "6e905bf0-356f-41e1-bfad-90db77f2b3a5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Q1O3C7BWkM7Vmnoz"
+        },
+        {
+            "nome": "Grace Reynolds",
+            "email": "b1605ba7-483e-4577-96df-bac1911f167a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Rs4yWApiyv9SLAC6"
+        },
+        {
+            "nome": "Eduardo Brekke",
+            "email": "f633043b-4ae0-407c-8a4b-75d2aaab3216@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "TRgXN6BuiowBeHYQ"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+1727033443887+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "TfJnfEoaSEJuInzR"
+        },
+        {
+            "nome": "Alvin Langosh",
+            "email": "e04eac29-b526-4624-9995-edcd6fe6e511@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Th5vKVjhLw85w5g2"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033818345+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "UT0ZhIbX4KD2bfbg"
+        },
+        {
+            "nome": "Dr. Anne Feest-Batz",
+            "email": "9447a124-5868-492f-b74a-32c88ecb2d9c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "UXzg2xSvogeC9VZ7"
+        },
+        {
+            "nome": "Karla Donnelly I",
+            "email": "0ea592dd-3327-4c0a-bfab-dcf064824cf5@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "UnnECT1AOIt8Z1rV"
+        },
+        {
+            "nome": "Fulano da Silva",
+            "email": "beltrano@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VAvs6FYlCy7znLhZ"
+        },
+        {
+            "nome": "miguel valentino",
+            "email": "miguelin@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "VzTbXRY26vNqE5hW"
+        },
+        {
+            "nome": "Dr. Leroy Monahan",
+            "email": "b3bb9896-0117-4332-b598-6c80cbe7292c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "WUNpIWhUhqvr3tC6"
+        },
+        {
+            "nome": "Heather Murphy IV",
+            "email": "cc5f3d39-5a4a-4264-88f0-8f4defb0506d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "Wkau559NUOGVSLhz"
+        },
+        {
+            "nome": "Cornelius Wehner",
+            "email": "142e4fd1-41b5-422a-83a1-15f7a269d535@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "XkCKvu1LCrsNhxGV"
+        },
+        {
+            "nome": "Essie Hahn-Pfannerstill IV",
+            "email": "0a7435c3-e2be-454c-b5ee-4f3ef7a10bbf@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "YGHYWqxBDDWGp1h9"
+        },
+        {
+            "nome": "Guillermo Dickinson",
+            "email": "4eddd5ad-ec24-4633-a0ab-bb315470084b@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "YKpmZRfcPi3rQxXJ"
+        },
+        {
+            "nome": "Bonnie Gutmann",
+            "email": "71c880f4-51f4-4134-b055-5aba4549138d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "an7WSonRrEPVXfCI"
+        },
+        {
+            "nome": "miguel valentino",
+            "email": "miguelino@qa.com.br",
+            "password": "teste",
+            "administrador": "true",
+            "_id": "bSLXMIg3cFaPpCc1"
+        },
+        {
+            "nome": "Frank Gutkowski",
+            "email": "20fc20ca-7270-421b-9194-1b2bdda39d45@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "bnru2BSyWB3kbitg"
+        },
+        {
+            "nome": "Annie Glover",
+            "email": "b44f710d-ce36-4519-b01a-e1ce18e0a63a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "buzMRpQDOGyRFQS5"
+        },
+        {
+            "nome": "Tammy Wuckert",
+            "email": "2545ee27-1382-49ad-a4e0-a5b4e0c1dea8@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "cof6il36ZDxm9HZ5"
+        },
+        {
+            "nome": "Jan Kessler",
+            "email": "8c261ca5-f29d-4d28-a0cf-96278b48f46a@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "gDN56GhuNiTNzH6J"
+        },
+        {
+            "nome": "Gessica",
+            "email": "Gessica1022+NaN+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "gUVapkKAWriPyp6P"
+        },
+        {
+            "nome": "Hector Hamill",
+            "email": "c6b8392f-778c-4c4a-90a7-c385ed2807f9@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "j9W2LeEgFjcjVipv"
+        },
+        {
+            "nome": "Nancy Quitzon",
+            "email": "7806feb9-7a17-4c60-8656-0deaa2d288da@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "jYPvZXbkx5xKM2GY"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+3+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "lMmar66OC7Q1vT9v"
+        },
+        {
+            "nome": "Bridget Beer",
+            "email": "a27ce49d-8447-421c-b86f-63e737b691ab@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ldF45c4vcKJNKVND"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033856712+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "lp9QolcxjoOh52D3"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+NaN+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "mJ6e72ottL09b5lE"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033944636+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "mfA2W7i6HiRWJnVE"
+        },
+        {
+            "nome": "Alfredo Dooley",
+            "email": "49f9b715-1cb3-490d-b841-38ec3ebdd47c@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "mxHbg7yxRgWVWLbT"
+        },
+        {
+            "nome": "Mr. Marco Fisher",
+            "email": "aa384ec8-9a8c-41a4-9521-a1f826a8225d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "mymwNh80V8WA94Xf"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727036024957+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "nZvjTs0PsK0G5bGS"
+        },
+        {
+            "nome": "Bill Goyette",
+            "email": "aeabe63e-aa39-4e54-918d-3f22a5b9fe20@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "nlKgqN4uZz270DwN"
+        },
+        {
+            "nome": "Ricky Moore",
+            "email": "5c94f71e-7796-41ec-b02c-f0d0defb719b@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "oWO6HKfrCphmp9xI"
+        },
+        {
+            "nome": "Isabel Baumbach",
+            "email": "b2dd14fc-a35b-4f02-964e-fd06f0bad461@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ohT2edlTiObZReKm"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+1727033922801+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "pkRppuGrEjeVw8sj"
+        },
+        {
+            "nome": "Beatrice Emard DDS",
+            "email": "f45deccd-0eb0-4814-8ff6-89ca4c6611a1@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "qr3UEaHr4oIK3KOg"
+        },
+        {
+            "nome": "Hilda Erdman",
+            "email": "5f68fea3-48a1-4d4b-9d38-f91cd7c5f05e@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "rHMg9zSBVpu9QfsF"
+        },
+        {
+            "nome": "Jeffrey Armstrong-Schaden",
+            "email": "af4cea54-1946-466f-8d69-1d1ded6e2ea7@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "s2g20SxHKtARC1WY"
+        },
+        {
+            "nome": "Johnny Stroman",
+            "email": "4af6a910-f772-497a-82b5-d10a4554b608@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "tJRXvfuMImLiO0IK"
+        },
+        {
+            "nome": "Mr. Rick Hudson",
+            "email": "2ad7be54-75b8-4ed4-a793-61a234fc1461@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "tZxdJm5RX8QljMJD"
+        },
+        {
+            "nome": "Wesley Walsh",
+            "email": "307136ed-86ba-42c5-8c69-b7e5e6f9c25f@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "uKuGf8WhkUS1AtDQ"
+        },
+        {
+            "nome": "Gessica",
+            "email": "hilarioleo+7+@gmail.com",
+            "password": "123456",
+            "administrador": "true",
+            "_id": "ua62U2uuilC4VI7Q"
+        },
+        {
+            "nome": "Flora Olson",
+            "email": "8ce40e50-f8ef-498e-abe2-8cc62f875f06@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "wBR2ThmP1apU3O7X"
+        },
+        {
+            "nome": "Jean Blick",
+            "email": "85eb2f00-0115-44a4-8b05-c5a99657c96d@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "xUL6isVHReAcs5H8"
+        },
+        {
+            "nome": "Laurie Heaney",
+            "email": "cb79d646-d6aa-4aa9-b009-79839e2ae352@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "ySysAF1rs4hm4LQL"
+        },
+        {
+            "nome": "Annie Schneider",
+            "email": "71a43249-5cee-476c-9212-f6d49d9a0e40@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "zMhem6pSVBcSQT8j"
+        },
+        {
+            "nome": "Margarita Cormier Jr.",
+            "email": "246857c6-658e-4f67-a27b-05e3ebaaa5a3@ZXatch.com",
+            "password": "12314",
+            "administrador": "true",
+            "_id": "zRymoviHPyzBzoJE"
+        }
+    ]
+}
+
+17:48:11.002 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 3 (2 remaining) classpath:examples/usersKarateTemplate/users.feature
+17:48:11.190 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 3 (1 remaining) classpath:examples/WebinarBase2/GET/usuarios.feature
+17:48:11.285 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 3 (0 remaining) classpath:examples/WebinarBase2/POST/post_usuarios.feature

@@ -1,0 +1,11 @@
+des:
+  env: 'des'
+
+uat:
+  env: 'uat'
+  bancoBV_auth: 'https://bancoBV'
+  bancoBV_auth_get: 'https://bancoBV'
+
+qa:
+  env: 'qa'
+  name_url: ' '

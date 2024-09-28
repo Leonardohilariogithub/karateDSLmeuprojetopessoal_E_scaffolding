@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5},{"content":"pool-1-thread-6","id":6},{"content":"pool-1-thread-7","id":7},{"content":"pool-1-thread-8","id":8},{"content":"pool-1-thread-9","id":9},{"content":"pool-1-thread-10","id":10}];
+var items = [{"id":1,"group":1,"content":"examples\/usersKarateTemplate\/users[1:7]","start":1727551117401,"end":1727551119204,"title":"examples\/usersKarateTemplate\/users[1:7] 16:18:37.401-16:18:39.204 get all users and then get the first user by id"},{"id":2,"group":2,"content":"examples\/usersKarateTemplate\/users[2:18]","start":1727551117401,"end":1727551118977,"title":"examples\/usersKarateTemplate\/users[2:18] 16:18:37.401-16:18:38.977 create a user and then get it by id"},{"id":3,"group":3,"content":"examples\/WebinarBase2\/DELETE\/DELETEusuarios[1:6]","start":1727551117401,"end":1727551119435,"title":"examples\/WebinarBase2\/DELETE\/DELETEusuarios[1:6] 16:18:37.401-16:18:39.435 deletar usuarios"},{"id":4,"group":4,"content":"examples\/WebinarBase2\/GET\/GETusuarios[1:6]","start":1727551117401,"end":1727551119166,"title":"examples\/WebinarBase2\/GET\/GETusuarios[1:6] 16:18:37.401-16:18:39.166 listar usuarios"},{"id":5,"group":5,"content":"examples\/WebinarBase2\/GET\/GETusuarios[2:11]","start":1727551117400,"end":1727551118903,"title":"examples\/WebinarBase2\/GET\/GETusuarios[2:11] 16:18:37.400-16:18:38.903 listar usuarios por nome"},{"id":6,"group":6,"content":"examples\/WebinarBase2\/GET\/GETusuarios[3:17]","start":1727551117401,"end":1727551118940,"title":"examples\/WebinarBase2\/GET\/GETusuarios[3:17] 16:18:37.401-16:18:38.940 listar usuarios por nome e email"},{"id":7,"group":7,"content":"examples\/WebinarBase2\/GET\/GETusuarios[4:23]","start":1727551117401,"end":1727551118925,"title":"examples\/WebinarBase2\/GET\/GETusuarios[4:23] 16:18:37.401-16:18:38.925 listar usuarios por nome e email validar retorno no response do objeto 0"},{"id":8,"group":8,"content":"examples\/WebinarBase2\/GET\/GETusuarios[5:33]","start":1727551117401,"end":1727551119190,"title":"examples\/WebinarBase2\/GET\/GETusuarios[5:33] 16:18:37.401-16:18:39.190 listar usuarios e verificar se algum tem nome \"Fulano da Silva\""},{"id":9,"group":9,"content":"examples\/WebinarBase2\/GET\/GETusuarios[6:45]","start":1727551117401,"end":1727551119122,"title":"examples\/WebinarBase2\/GET\/GETusuarios[6:45] 16:18:37.401-16:18:39.122 listar usuarios e verificar se algum tem nome \"Fulano da Silva\""},{"id":10,"group":10,"content":"examples\/WebinarBase2\/POST\/POST_usuarios[2:25]","start":1727551117400,"end":1727551118979,"title":"examples\/WebinarBase2\/POST\/POST_usuarios[2:25] 16:18:37.400-16:18:38.979 cadastrar usuarios com sucesso","className":"failed"},{"id":11,"group":5,"content":"examples\/WebinarBase2\/POST\/POST_usuarios[3:43]","start":1727551118916,"end":1727551119483,"title":"examples\/WebinarBase2\/POST\/POST_usuarios[3:43] 16:18:38.916-16:18:39.483 cadastrar usuarios com sucesso com body em arquivo json"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

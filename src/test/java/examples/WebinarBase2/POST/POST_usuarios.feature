@@ -1,7 +1,7 @@
 Feature: Praticando karate framework com API Serverest
 
   Background:
-    * url "https://serverest.dev"
+    * url url
 
     @ignore
   Scenario: cadastrar usuarios com sucesso unico
@@ -39,7 +39,7 @@ Feature: Praticando karate framework com API Serverest
     Then status 400
     And match response.message == "Este email já está sendo usado"
 
-  @testUnico
+  #@testUnico
   Scenario: cadastrar usuarios com sucesso com body em arquivo json
 
     #Randomico com varios caracteres

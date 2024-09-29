@@ -1,7 +1,7 @@
 # karateDSLmeuprojetopessoal_E_scaffolding
 
 Características:
-Linguagem de desenvolvimento - Java
+Linguagem de desenvolvimento - Java e JavaScript
 
 Versão do Java - 17
 
@@ -30,7 +30,7 @@ API de teste:
 API alvo de testes será a Serverest.
 
 O ServeRest é uma API REST gratuita que simula uma loja virtual com intuito de servir de material de estudos de testes de API.
-
+(https://serverest.dev/#/)
 Essa API está disponível online, localmente através do docker ou NPM.
 
 Este projeto foi desenvolvido exclusivamente para estudo da estrutura e funcionalidades do Karate Framework. Não estamos focando nas melhores práticas de estruturação de uma bateria de teste de regressão, como por exemplo, testes independentes e desacoplados.

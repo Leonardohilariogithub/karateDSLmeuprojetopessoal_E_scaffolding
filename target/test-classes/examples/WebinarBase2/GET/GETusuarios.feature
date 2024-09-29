@@ -8,7 +8,6 @@ Feature: Praticando karate framework com API Serverest
     When method GET
     Then status 200
 
-    @smoke
   Scenario: listar usuarios por nome
     Given  path "/usuarios"
     And param nome = "Fulano da Silva"

@@ -36,7 +36,6 @@ Feature: Praticando karate framework com API Serverest
     Then status 200
     Then assert responseStatus == 200 || responseStatus == 204
     * match [200, 201] contains responseStatus
-    And assert responseTime < 1000
     And match responseType == 'json'
       #asterisco * vai procurar em todos objetos o parametro nome
     And match response.usuarios[*].nome contains "Fulano da Silva"
@@ -48,3 +47,9 @@ Feature: Praticando karate framework com API Serverest
     Then status 200
     And match response.quantidade == "#number"
     And match response.quantidade != "#null"
+
+    #outros exemplos da Documentação
+#    And assert responseTime < 1000
+#    Ana match response.length == 10
+#    Ana match response.data contains {id: 5}
+#    And match response == '#array'

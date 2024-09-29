@@ -1,0 +1,6 @@
+examples\Todas_FeaturesTestRunner.class
+examples\WebinarBase2\GET\WebinarBase2Runner.class
+examples\WebinarBase2\PUT\WebinarBase2Runner.class
+examples\WebinarBase2\DELETE\WebinarBase2Runner.class
+examples\WebinarBase2\POST\WebinarBase2Runner.class
+examples\usersKarateTemplate\UsersRunner.class

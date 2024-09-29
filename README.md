@@ -34,3 +34,15 @@ O ServeRest é uma API REST gratuita que simula uma loja virtual com intuito de 
 Essa API está disponível online, localmente através do docker ou NPM.
 
 Este projeto foi desenvolvido exclusivamente para estudo da estrutura e funcionalidades do Karate Framework. Não estamos focando nas melhores práticas de estruturação de uma bateria de teste de regressão, como por exemplo, testes independentes e desacoplados.
+
+==========================================
+# Teste de desempenho de API feito.
+
+Para executar o teste Gatling:(https://karatelabs.github.io/karate/karate-gatling/)
+mvn clean test-compile gatling:test
+
+Para usar o gatlingperfil Maven e executar a simulação de teste de desempenho:
+mvn clean test -P gatling
+
+
+

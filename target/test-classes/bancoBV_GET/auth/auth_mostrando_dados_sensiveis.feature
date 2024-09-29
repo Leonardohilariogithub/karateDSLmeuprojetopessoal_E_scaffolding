@@ -4,8 +4,8 @@ Feature: Autenticação passando dados sensiveis(client id e secret)
 
   Background:
     * def headers = read("classpath:bv/com/bv/support/data/headers.yaml")
-    * def client_id = "l7ggjhgjhgjhghjxxxfgfjhfjhfjhfjjjj"
-    * def client_secret = "zzxxl7ggjhgjhgjhghjxxxfgfjhfjhfjhfjjjj"
+    * def client_id = "rssrsrsrsrsrsrssrsrrsrs"
+    * def client_secret = "kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"
 
   @token
   Scenario Outline:<status_code>

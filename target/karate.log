@@ -12,3 +12,738 @@ java.lang.RuntimeException: Can't find the jar matching scala-library-.*\.jar$
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at io.gatling.mojo.MainWithArgsInFile.runMain(MainWithArgsInFile.java:50)
 	at io.gatling.mojo.MainWithArgsInFile.main(MainWithArgsInFile.java:33)
+12:31:14.022 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:31:15.182 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:31:15.346 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:9
+When method POST
+incomplete http request, 'url' not set
+classpath:examples/marcosCunhaAllTests/feature.feature:9
+12:33:48.699 [main] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: examples/marcosCunhaAllTests/feature.feature - mismatched input '{' expecting <EOF>
+12:35:09.937 [main] ERROR c.intuit.karate.core.FeatureParser - not a valid feature file: examples/marcosCunhaAllTests/feature.feature - mismatched input '{' expecting <EOF>
+12:37:53.549 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:37:54.952 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:37:55.106 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:16
+Given url qa.fakerestapi
+js failed:
+>>>>
+01: qa.fakerestapi
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "qa" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/marcosCunhaAllTests/feature.feature:16
+12:38:16.688 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:38:17.763 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:38:17.905 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:16
+Given url fakerestapi
+js failed:
+>>>>
+01: fakerestapi
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "fakerestapi" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/marcosCunhaAllTests/feature.feature:16
+12:39:34.137 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:39:35.265 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:39:35.307 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:4
+* def url = read("classpath:examples/marcosCunhaAllTests/config/basicURL.yaml")
+'url' is a reserved name, also use the form '* url <expression>' instead
+classpath:examples/marcosCunhaAllTests/feature.feature:4
+12:41:31.045 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:41:32.176 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:41:32.223 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:4
+* def url = call read("classpath:examples/marcosCunhaAllTests/config/basicURL.yaml")
+'url' is a reserved name, also use the form '* url <expression>' instead
+classpath:examples/marcosCunhaAllTests/feature.feature:4
+12:41:57.252 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:41:58.284 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:41:58.322 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:4
+* def url = call read("classpath:examples/marcosCunhaAllTests/config/basicURL.yaml")
+'url' is a reserved name, also use the form '* url <expression>' instead
+classpath:examples/marcosCunhaAllTests/feature.feature:4
+12:44:09.783 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:44:11.007 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:44:11.179 [main] INFO  com.intuit.karate - [print] https://serverest.dev 
+12:44:11.195 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:18
+Given urlBase fakerestapi
+no step-definition method match found for: urlBase fakerestapi
+classpath:examples/marcosCunhaAllTests/feature.feature:18
+12:45:06.274 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:45:07.545 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:45:07.765 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:17
+Given urlBase fakerestapi
+no step-definition method match found for: urlBase fakerestapi
+classpath:examples/marcosCunhaAllTests/feature.feature:17
+12:47:00.468 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:47:01.911 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:47:02.098 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:16
+Given urlBase fakerestapi
+no step-definition method match found for: urlBase fakerestapi
+classpath:examples/marcosCunhaAllTests/feature.feature:16
+12:49:46.218 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:49:47.340 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:49:47.482 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:16
+Given url fakerestapi
+js failed:
+>>>>
+01: fakerestapi
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "fakerestapi" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/marcosCunhaAllTests/feature.feature:16
+12:50:36.602 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:50:37.810 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:50:37.936 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:16
+Given url fakerestapi
+js failed:
+>>>>
+01: fakerestapi
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "fakerestapi" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/marcosCunhaAllTests/feature.feature:16
+12:51:57.527 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:51:58.641 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:51:58.673 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:4
+* def url = "https://fakerestapi.azurewebsites.net/"
+'url' is a reserved name, also use the form '* url <expression>' instead
+classpath:examples/marcosCunhaAllTests/feature.feature:4
+12:55:23.996 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:55:25.006 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:55:25.060 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:4
+* def url = "https://fakerestapi.azurewebsites.net/"
+'url' is a reserved name, also use the form '* url <expression>' instead
+classpath:examples/marcosCunhaAllTests/feature.feature:4
+12:55:55.699 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:55:56.923 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:55:56.954 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:4
+* def url url
+no step-definition method match found for: def url url
+classpath:examples/marcosCunhaAllTests/feature.feature:4
+12:57:10.557 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:57:11.676 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:57:11.702 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:4
+* def url = "https://fakerestapi.azurewebsites.net/"
+'url' is a reserved name, also use the form '* url <expression>' instead
+classpath:examples/marcosCunhaAllTests/feature.feature:4
+12:58:26.553 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:58:27.792 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:58:27.980 [main] INFO  com.intuit.karate - [print] https://serverest.dev 
+12:58:27.996 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:21
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:21
+13:01:57.162 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:01:58.308 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:01:58.418 [main] INFO  com.intuit.karate - [print] https://serverest.dev 
+13:01:58.428 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:21
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:21
+13:02:25.117 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:02:26.219 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:02:26.344 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'body' with new value: {
+  "id": 0,
+  "userName": "string",
+  "password": "string"
+}
+13:02:26.349 [main] INFO  com.intuit.karate - [print] https://serverest.dev 
+13:02:26.352 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:29
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:29
+13:03:21.448 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:03:22.609 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:03:22.779 [main] INFO  com.intuit.karate - [print] {
+  "id": 0,
+  "userName": "string",
+  "password": "string"
+}
+ 
+13:03:22.790 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:20
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:20
+13:22:04.405 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:22:05.617 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:22:05.821 [main] INFO  com.intuit.karate - [print] {
+  "id": "0",
+  "userName": "string",
+  "password": "string"
+}
+ 
+13:22:05.821 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:20
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:20
+13:23:12.294 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:23:13.520 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:23:13.659 [main] INFO  com.intuit.karate - [print] {
+  "id": 0,
+  "userName": "string",
+  "password": "string"
+}
+ 
+13:23:13.674 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:20
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:20
+13:24:52.222 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:24:53.383 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:24:53.509 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:18
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:18
+13:26:42.725 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:26:43.808 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:26:43.933 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:19
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:19
+13:27:40.352 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:27:41.387 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:27:41.529 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:19
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:19
+13:28:13.434 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:28:14.533 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:28:14.659 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:19
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:19
+13:33:25.742 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:33:26.777 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:33:26.919 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:19
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:19
+13:40:42.005 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:40:43.403 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:40:43.560 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:19
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:19
+13:42:41.958 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:42:43.113 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:42:43.255 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:19
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:19
+13:44:52.023 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:44:53.059 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:44:53.232 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:6
+* def json = call read("classpath:examples/marcosCunhaAllTests/json/json.json")
+not a callable feature or js function: [type: MAP, value: {id=#(number), userName=#(string), password=#(string)}]
+classpath:examples/marcosCunhaAllTests/feature.feature:6
+13:45:30.082 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:45:31.149 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:45:31.306 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:13
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:13
+13:48:22.078 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:48:23.208 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:48:23.365 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:19
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:19
+13:49:38.445 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:49:39.516 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:49:39.667 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:19
+And resquest body
+no step-definition method match found for: resquest body
+classpath:examples/marcosCunhaAllTests/feature.feature:19
+13:51:07.865 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:51:09.208 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:51:09.396 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:20
+When method POST
+incomplete http request, 'url' not set
+classpath:examples/marcosCunhaAllTests/feature.feature:20
+13:52:23.784 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:52:24.852 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:52:25.030 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:20
+When method POST
+incomplete http request, 'url' not set
+classpath:examples/marcosCunhaAllTests/feature.feature:20
+13:53:14.859 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:53:15.902 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:53:16.348 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 48
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:53:17.297 [main] DEBUG com.intuit.karate - response time in milliseconds: 944
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 16:53:17 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-b572441eac42ba4bb2d896ef0f483fd6-e77ad856a5a2ae4e-00"}
+
+13:53:17.312 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:22
+* print POST
+js failed:
+>>>>
+01: karate.log('[print]',POST)
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "POST" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/marcosCunhaAllTests/feature.feature:22
+13:53:46.797 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:53:47.849 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:53:48.291 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 48
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:53:49.147 [main] DEBUG com.intuit.karate - response time in milliseconds: 851
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 16:53:49 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-d71e3be60a23b44fb6e2f56ae4c99750-36d708be628d8c44-00"}
+
+13:53:49.147 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:22
+Then status 200
+status code was: 415, expected: 200, response time in milliseconds: 851, url: https://fakerestapi.azurewebsites.net/api/v1/Users, response: 
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-d71e3be60a23b44fb6e2f56ae4c99750-36d708be628d8c44-00"}
+classpath:examples/marcosCunhaAllTests/feature.feature:22
+13:54:34.970 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:54:36.633 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:54:37.480 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 48
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:54:38.422 [main] DEBUG com.intuit.karate - response time in milliseconds: 942
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 16:54:38 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-773cda5dfc2d4e48b26855cb72bda17e-7bcb04001b825f44-00"}
+
+13:54:38.437 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:22
+Then status 200
+status code was: 415, expected: 200, response time in milliseconds: 942, url: https://fakerestapi.azurewebsites.net/api/v1/Users, response: 
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-773cda5dfc2d4e48b26855cb72bda17e-7bcb04001b825f44-00"}
+classpath:examples/marcosCunhaAllTests/feature.feature:22
+13:55:10.704 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:55:11.954 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:55:12.436 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 48
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:55:13.408 [main] DEBUG com.intuit.karate - response time in milliseconds: 953
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 16:55:13 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-9436115592795442b95bcb8656132cc3-b7913d2bc3e2c74f-00"}
+
+13:55:13.429 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:26
+And match response contains deep expected
+js failed:
+>>>>
+01: expected
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "expected" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/marcosCunhaAllTests/feature.feature:26
+13:57:17.791 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:57:19.036 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:19.507 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 48
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:20.418 [main] DEBUG com.intuit.karate - response time in milliseconds: 911
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 16:57:20 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-5c30aa6e063b4042ae67cf9c3d6dc5eb-476c32f1e9829c41-00"}
+
+13:57:54.286 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:57:55.522 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:56.041 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 48
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:56.904 [main] DEBUG com.intuit.karate - response time in milliseconds: 863
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 16:57:57 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-eefb6202dccbf0438e6621fa09ce6a43-3057d80450ff8049-00"}
+
+13:57:56.920 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:22
+* print POST
+js failed:
+>>>>
+01: karate.log('[print]',POST)
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "POST" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/marcosCunhaAllTests/feature.feature:22
+13:59:24.877 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:59:26.210 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:59:26.650 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 48
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:59:27.607 [main] DEBUG com.intuit.karate - response time in milliseconds: 957
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 16:59:27 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-e9f5bb6475d4db44a9b8a8c01a8638ee-b2e2fcb16e824242-00"}
+
+13:59:27.622 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:22
+* print POST
+js failed:
+>>>>
+01: karate.log('[print]',POST)
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "POST" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/marcosCunhaAllTests/feature.feature:22
+13:59:47.587 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:59:48.680 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:59:49.088 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 48
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:59:49.951 [main] DEBUG com.intuit.karate - response time in milliseconds: 863
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 16:59:50 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-97c927df6250354b9a968f7413b04c15-a761ef8847895746-00"}
+
+14:00:59.038 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:01:00.104 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:01:00.576 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 64
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:01:01.485 [main] DEBUG com.intuit.karate - response time in milliseconds: 909
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 17:01:01 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-8b39128b299bab4e8d2e736db9cf2e7c-2b909bcc3ddc534f-00"}
+
+14:04:15.265 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:04:16.359 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:04:16.516 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:9
+Given url fakerestapi
+js failed:
+>>>>
+01: fakerestapi
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "fakerestapi" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/marcosCunhaAllTests/feature.feature:9
+14:05:04.326 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:05:05.408 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:05:05.574 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:9
+Given url uat.fakerestapi
+js failed:
+>>>>
+01: uat.fakerestapi
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "uat" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:examples/marcosCunhaAllTests/feature.feature:9
+14:05:33.777 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:05:34.865 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:05:35.289 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 64
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:05:36.137 [main] DEBUG com.intuit.karate - response time in milliseconds: 848
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 17:05:36 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-65d29ea9ca97664bab0bc73590ecd1ed-798522da2ce4404e-00"}
+
+14:54:50.386 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:54:51.986 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:54:53.031 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 64
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:54:54.239 [main] DEBUG com.intuit.karate - response time in milliseconds: 1201
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 17:54:54 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-4c347831b432934fa64677d6631dab16-8ef0a3bd09ecbf47-00"}
+
+14:54:54.248 [main] DEBUG com.intuit.karate - abort at classpath:examples/marcosCunhaAllTests/feature.feature:15
+14:55:35.437 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:55:36.535 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:55:36.959 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 64
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:55:37.839 [main] DEBUG com.intuit.karate - response time in milliseconds: 880
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 17:55:38 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-58c86b0c7993bb4988ad439cb173597c-684fad2d789d1845-00"}
+
+14:55:37.870 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:15
+And match response contains {"acess_token": "#notnull"}
+match failed: CONTAINS
+  $ | actual does not contain expected | actual does not contain key - 'acess_token' (MAP:MAP)
+  {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-58c86b0c7993bb4988ad439cb173597c-684fad2d789d1845-00"}
+  {"acess_token":"#notnull"}
+
+
+classpath:examples/marcosCunhaAllTests/feature.feature:15
+14:56:06.315 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:56:07.368 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:56:07.853 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 64
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:56:08.731 [main] DEBUG com.intuit.karate - response time in milliseconds: 878
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 17:56:09 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-9e0289a49147fa48b60619caf1893de2-d384e9bb01b4d741-00"}
+
+14:56:08.747 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:15
+And match response contains {"acess_token": "#null"}
+match failed: CONTAINS
+  $ | actual does not contain expected | actual does not contain key - 'acess_token' (MAP:MAP)
+  {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-9e0289a49147fa48b60619caf1893de2-d384e9bb01b4d741-00"}
+  {"acess_token":"#null"}
+
+
+classpath:examples/marcosCunhaAllTests/feature.feature:15
+14:57:15.796 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:57:16.882 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:57:17.384 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 64
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:57:18.283 [main] DEBUG com.intuit.karate - response time in milliseconds: 899
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 17:57:18 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-5abd626303ba104fa01baf3cdc1da742-2f9095b156104b4e-00"}
+
+14:57:18.296 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:15
+And match response contains {"acess_token": "null"}
+match failed: CONTAINS
+  $ | actual does not contain expected | actual does not contain key - 'acess_token' (MAP:MAP)
+  {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-5abd626303ba104fa01baf3cdc1da742-2f9095b156104b4e-00"}
+  {"acess_token":"null"}
+
+
+classpath:examples/marcosCunhaAllTests/feature.feature:15
+14:57:41.848 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:57:42.948 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:57:43.381 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 64
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:57:44.224 [main] DEBUG com.intuit.karate - response time in milliseconds: 838
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 17:57:44 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-48fdc70c69c0704c937ac312efd160ff-658318fa214e6d40-00"}
+
+14:57:44.239 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:15
+And match response contains {"acess_token": null}
+match failed: CONTAINS
+  $ | actual does not contain expected | actual does not contain key - 'acess_token' (MAP:MAP)
+  {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-48fdc70c69c0704c937ac312efd160ff-658318fa214e6d40-00"}
+  {"acess_token":null}
+
+
+classpath:examples/marcosCunhaAllTests/feature.feature:15
+14:58:06.074 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:58:07.248 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:58:07.705 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 64
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:58:08.569 [main] DEBUG com.intuit.karate - response time in milliseconds: 864
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 17:58:08 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-b92b5c9ca158b04593939f108ffce0b4-ee8ad9e9ce525046-00"}
+
+14:58:08.584 [main] DEBUG com.intuit.karate - abort at classpath:examples/marcosCunhaAllTests/feature.feature:17
+14:58:47.468 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:58:48.598 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:58:49.038 [main] DEBUG com.intuit.karate - request:
+1 > POST https://fakerestapi.azurewebsites.net/api/v1/Users
+1 > Content-Type: application; charset=UTF-8
+1 > Accept: */*
+1 > Content-Length: 64
+1 > Host: fakerestapi.azurewebsites.net
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+1 > Accept-Encoding: gzip,deflate
+
+
+14:58:49.927 [main] DEBUG com.intuit.karate - response time in milliseconds: 874
+1 < 415
+1 < Content-Type: application/problem+json; charset=utf-8
+1 < Date: Sun, 29 Sep 2024 17:58:50 GMT
+1 < Server: Kestrel
+1 < Transfer-Encoding: chunked
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-b88ece56a5b13541a68bf30238e226e3-1c324dd13c99b24d-00"}
+
+14:58:49.948 [main] ERROR com.intuit.karate - classpath:examples/marcosCunhaAllTests/feature.feature:15
+And match response contains {"acess_token": "#string"}
+match failed: CONTAINS
+  $ | actual does not contain expected | actual does not contain key - 'acess_token' (MAP:MAP)
+  {"type":"https://tools.ietf.org/html/rfc7231#section-6.5.13","title":"Unsupported Media Type","status":415,"traceId":"00-b88ece56a5b13541a68bf30238e226e3-1c324dd13c99b24d-00"}
+  {"acess_token":"#string"}
+
+
+classpath:examples/marcosCunhaAllTests/feature.feature:15

@@ -8,7 +8,7 @@ function fn() {
     env: env,
     myVarName: 'someValue'
   }
-  if (env == 'dev') {
+  if (env == 'uat') {
     config.url = "https://serverest.dev";
   } else if (env == 'qa') {
     config.url = "https://serverest.dev";

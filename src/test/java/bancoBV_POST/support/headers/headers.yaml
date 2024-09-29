@@ -1,0 +1,2 @@
+"headers_auth": { "Content-Type": "application", "Accept": "*/*", "Accept-encoding": "gzip, deflate"}
+"headers_POST": { "accountNumber": "123456789", "proxy": "123", "produto": "9"}

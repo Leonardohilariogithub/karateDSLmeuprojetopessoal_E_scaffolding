@@ -22,3 +22,11 @@ Feature: GET passando todos os headers no cenario
     Examples:
       | Cenario 01 valido                        | status_code |  | accountNumber              | proxy | produto |
       | Cenario com sucesso com todos parametros | 200         |  | yaml.validos.accountNumber | 123   | 9       |
+
+    Examples:
+      | Cenario 01 valido                        | status_code |  | accountNumber              | proxy | produto |
+      | Cenario com sucesso com todos parametros | 200         |  | yaml.validos.proxy         | 123   | 9       |
+
+    Examples:
+      | Cenario 01 valido                        | status_code |  | accountNumber              | proxy | produto |
+      | Cenario com sucesso com todos parametros | 200         |  | yaml.validos.produto       | 123   | 9       |

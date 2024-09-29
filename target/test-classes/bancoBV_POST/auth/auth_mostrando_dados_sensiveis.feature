@@ -16,7 +16,6 @@ Feature: Autenticação passando dados sensiveis(client id e secret)
     And request body
     When method POST
     Then status <status_code>
-    * if (responseStatus != 200) karate.abort()
     And match response contains {"acess_token": "#notnull"}
 
     Examples:
